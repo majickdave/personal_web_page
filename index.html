@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<title>The Personal Webpage of David Samuel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.portrait {
+    width: 200px;
+    height: 200px;
+}
+
+.papers {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+}
+
+.object-fit_cover {
+  object-fit: cover
+}
+
+.object-fit_fill {
+  object-fit: fill
+}
+
+.object-fit_none {
+  object-fit: none
+}
+
+    .mobile{
+  display:none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile{
+    display:block;
+  }
+  .web{
+    display:none;
+  }
+}
+
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img style="border:5px solid white" class="w3-center w3-margin w3-animate-zoom w3-hover-black object-fit_cover w3-circle avatar" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-paperclip w3-xxlarge"></i>
+    <p>RESEARCH</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
+
+    <img style="border:8px solid white" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1" alt="David Samuel's Portrait" class="w3-animate-zoom w3-card-2 w3-circle portrait object-fit_cover">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">David Samuel.</span></h1>
+    <h2>Data Architect and Founder of MusicMind Inc.</h2>
+    <h3>M.S., Data Science, Southern Methodist University 2017</h3>
+    <h4>B.S. Engineering, University of Massachusetts 2009</h4>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">David Samuel</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>All my life I have had a passion in music creation, discovery, and sharing, but had no way to truly express myself as a Sound Arranger.
+        My pursuit of making music shifted to a desire to create artful music experiences.  My skillset coupled with knowledge and access to the
+        powerful tools made available by Silicon Valley giants, I have created a simple solution to my problem, that has vast implications for 
+        music, video, augmented reality, and social networking.  MusicMind Inc. is inspired by you, the listener, who is looking for a deeper
+        connection to the artists and content creators that you love.</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Python</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Swift</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Swift</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">C</p>
+    <div class="w3-white">
+      <div class="w3-yellow" style="height:28px;width:65%"></div>
+    </div><br>
+    
+<!--     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div> -->
+
+
+
+    <!-- Grid for pricing tables -->
+    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div> -->
+    <!-- End Grid/Pricing tables -->
+
+    
+    <!-- Testimonials -->
+
+    <h3 class="w3-padding-24 w3-text-light-grey">My References</h3>  
+    <img style="border:5px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class=" avatar w3-left w3-circle w3-margin-right">
+    <p><span class="w3-large w3-margin-right">Daniel Engels.</span> Director, Master of Science in Data Science program at Southern Methodist University.</p>
+    <p>Dr. Engels was my most influential mentor at SMU</p>
+
+    <img style="border:5px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
+    <p><span class="w3-large w3-margin-right">Ginger Holt.</span> Manager, Data Science at Facebook.</p>
+    <p>Dr. Holt taught my capstone class in Data Science.</p><br>
+    
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="research">
+    <h2 class="w3-text-light-grey">Research papers</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+      </div>
+
+      <div class="w3-half">
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Programming projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+      </div>
+
+      <div class="w3-half">
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Venice, Los Angeles, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (424) 291-2683</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: dave@musicmindcompany.com</p>
+    </div><br>
+<!--     <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+  <!-- End Contact Section -->
+  </div>
+  
+ <!-- Footer -->
+<footer class="web w3-content w3-padding-64 w3-text-grey w3-xlarge" style="color: white" >
+  
+  <a href="https://www.linkedin.com/in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github "></i></a>
+  <a href="mailto: dave@musicmindcompany.com?body=Greetings, My name is [yourname], I'd love to chat about the future with you."><i class="fa fa-envelope-o"></i></a>
+  <a href="https://angel.co/musicmindco" target="_blank"><i class="fa fa-angellist"></i></a>
+  <a href="https://www.facebook.com/musicmindcompany/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://twitter.com/MusicMindcorp" target="_blank"><i class="fa fa-twitter"></i></a>
+</footer>
+
+<footer class="mobile w3-content w3-padding-64 w3-text-grey w3-xlarge" style="color: white" >
+  
+  <a href="linkedin://in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github "></i></a>
+  <a href="mailto:majickdave@gmail.com"><i class="fa fa-envelope-o"></i></a>
+  <a href="https://angel.co/musicmindco" target="_blank"><i class="fa fa-angellist"></i></a>
+  <a href="fb://profile/1915165215387013/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://twitter.com/MusicMindcorp" target="_blank"><i class="fa fa-twitter"></i></a>
+</footer>
+
+</body>
+
+</html>
