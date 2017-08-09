@@ -32,7 +32,9 @@ video {
   height: 180px;
 /*    -webkit-filter: hue-rotate(180deg); 
     filter: hue-rotate(180deg);*/
-  filter:drop-shadow(-8px -8px 10px white);
+  filter: brightness(80%);
+  filter:drop-shadow(1px 1px 10px black);
+
 
 }
 
@@ -74,13 +76,15 @@ video {
 .avatar {
   width: 72px;
   height: 72px;
+  filter: brightness(80%);
+  filter:drop-shadow(1px 1px 10px #00ff99);
 }
 
 .avatar1 {
   width: 72px;
   height: 72px;
-  -webkit-filter: hue-rotate(180deg); 
-  filter: hue-rotate(180deg);
+  filter: brightness(80%);
+  filter:drop-shadow(1px 1px 10px white);
 }
 
 .object-fit_cover {
@@ -170,7 +174,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large w3-animate-opacity" id="main">
+<div class="w3-white w3-padding-large w3-animate-opacity" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
 
@@ -178,22 +182,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
     <h1 class="w3-jumbo"><span class="w3-hide-small">Hello, world!</span></h1>
     <h2>I'm David Samuel.</h2>
     <h3>Data Architect and Founder of MusicMind Inc.</h3>
-    <div class="w3-opacity">
+    <div>
     <p>M.S. Data Science, Southern Methodist University 2017</p>
     <p>B.S. Engineering, University of Massachusetts 2009</p>
     </div>
 
   <!-- About Section -->
   <div class="w3-animate-opacity w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Prologue</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h2 class="w3-text-black">Prologue</h2>
+    <hr style="width:200px" class="w3-white">
     <p>My passion for image processing, and computer vision developed during my data visualization course in my Data Science Graduate program through Southern Methodist University in 2016. However, my passion for the arts and music emerged long before my master’s degree, starting in my youth. When I realized I could put my love for making music and my love for visualizing data intelligently together, I became inspired to create thoughtful masterpieces through data transformation, and visualization techniques. 
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">Programming Languages</h3>
+    <h2 class="w3-padding-16 w3-text-black w3-animate">Programming Languages</h2>
 
 
 <!-- Skill graph -->
-
+  <div class=" w3-black w3-round-xxlarge" style="padding: 20px">
     <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
     <div class="w3-round">
@@ -225,101 +229,51 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
       <div class="w3-pink cpp w3-round" style="height:28px;width:65%"></div>
     </div><br>
     
+  </div>
 
+<!--     References -->
 
-
-
-<!--     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div> -->
-    <!-- Grid for pricing tables -->
-    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div> -->
-    <!-- End Grid/Pricing tables -->
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">References</h3>  
-    
-    <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right">
-    <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/danielwengels/" data-format="hover" data-related="false"></script></span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
-    <p>Dr. Engels was my most influential mentor at SMU.</p><br>
+  <h2 class="w3-white">References</h2>  
+    <div class=" w3-black w3-round-xxlarge" style="padding: 20px">
+      <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right">
+      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/danielwengels/" data-format="hover" data-related="false"></script></span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
+      <p>Dr. Engels was my most influential mentor at SMU.</p><br>
     <div />
-    <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
-    <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ginger-holt-7461161/" data-format="hover" data-related="false"></script></span>Manager, Data Science at Facebook.</p>
-    <p>Dr. Holt taught my capstone class in Data Science.</p><br>
-    
+      <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
+      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+      <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ginger-holt-7461161/" data-format="hover" data-related="false"></script></span>Manager, Data Science at Facebook.</p>
+      <p>Dr. Holt taught my capstone class in Data Science.</p><br>
+    </div>
 
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="research">
-    <h2 class="w3-text-light-grey">Data Science Research Papers</h2>
+    <h2 class="w3-white">Data Science Research Papers</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-black w3-round-xxlarge w3-row-padding" style="padding:20px">
       <div class="w3-half">
         <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
         <p class="w3-black"><i><b>Blockchain Research</b></i></p>
         <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <p class="w3-black"><i><b>Emotional Analysis of presidential candidates using Facial Image Recognition</b></i></p>
+        <p class="w3-black"><i><b>Facial Image Emotional Analysis</b></i></p>
+      <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark"><h4><a href="https://p5-emoji.herokuapp.com/">Spotify MusicMind Translational Plugin</a></h4><p> A mock design of MusicMind's music to emoji feature</p></blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
       </div>
 
       <div class="w3-half">
         <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <p class="w3-black"><i><b>Natural Language Processing on Twitter</b></i></p>
+        <p class="w3-black"><i><b>Natural Language Processing</b></i></p>
         <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <p class="w3-black"><i><b>Analyzing Behavior and Perception on Wikipedia</b></i></p>
+        <p class="w3-black"><i><b>Perceptions of Wikipedia</b></i></p>
+      <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark"><h4><a href="https://github.com/majickdave/NIST_digits/blob/master/Lab2FinalResubmission.ipynb"> Computer Vision</a></h4><p>NIST_digits - Numeral image data classification using various machine learning models</p></blockquote>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+
 
       </div>
     <!-- End photo grid -->
@@ -327,17 +281,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
 
   <div class="w3-padding-64 w3-content" id="projects">
-    <h2 class="w3-text-light-grey">Programming projects</h2>
-    <hr style="width:200px" class="w3-opacity">
-              <video style="width:100%" controls muted>
+    <h2 class="w3-white">Data Visualization Projects</h2>
+    <hr style="width:100%" class="w3-opacity">
+              <video style="width:200px" controls muted>
           <source src="https://dl.dropboxusercontent.com/s/7lm1qcbodmtg9q7/short_viz.mp4?raw=1" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video style="width:100%" controls muted>
+        <video style="width:200px" controls muted>
           <source src="https://dl.dropboxusercontent.com/s/4z1mvj0ipvrdexy/ascii_movie.mp4?raw=1" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
-        <video  style="width:100%" controls>
+        <video  style="width:200px" controls>
         <source src="https://dl.dropboxusercontent.com/s/05tu24ieb87mex5/DNA.mp4?raw=1" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
@@ -345,11 +299,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
           <source src="https://dl.dropboxusercontent.com/s/tzgl8v2u517xakj/mask%20off.mp4?raw=1" type="video/mp4">
           Your browser does not support HTML5 video.
         </video> -->
-      <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark"><h4><a href="https://github.com/majickdave/NIST_digits/blob/master/Lab2FinalResubmission.ipynb"> Computer Vision</a></h4><p>NIST_digits - Numeral image data classification using various machine learning models</p></blockquote>
-      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
-      <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark"><h4><a href="https://p5-emoji.herokuapp.com/">Spotify MusicMind Translational Plugin</a></h4><p> A mock design of MusicMind's music to emoji feature</p></blockquote>
-      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
   </div>
   <!-- End Portfolio Section -->
@@ -360,9 +310,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   
  <!-- Footer -->
  <div class="w3-padding-64 w3-content" id="contact">
-<h2 class="w3-text-light-grey">Let's Connect.</h2>
+<h2 class="w3-white">Let's Connect.</h2>
 
-<footer class="web w3-content w3-xlarge" style="color: white" >
+<footer class="web w3-content w3-xlarge w3-white" style="color: white" >
   <hr style="width:50%">
   <a href="https://www.linkedin.com/in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
   <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github "></i></a>
@@ -374,7 +324,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 </footer>
 
 
-<footer class="mobile w3-content w3-padding-64 w3-text-grey w3-xlarge" style="color: white" >
+<footer class="mobile w3-content w3-padding-64 w3-white w3-xlarge" style="color: white" >
   <hr style="width:50%">
   <a href="linkedin://in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
   <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github "></i></a>
