@@ -32,37 +32,37 @@ video {
   height: 180px;
 /*    -webkit-filter: hue-rotate(180deg); 
     filter: hue-rotate(180deg);*/
-  filter:drop-shadow(8px 8px 10px indigo);
+  filter:drop-shadow(-8px -8px 10px white);
 
 }
 
 .python {
-  filter:drop-shadow(2px 1px 12px cyan);
+  filter:drop-shadow(8px 1px 8px blue);
 
 }
 
 .javascript {
-  filter:drop-shadow(2px 1px 12px white);
+  filter:drop-shadow(8px 1px 8px #00e600);
 
 }
 
 .swift {
-  filter:drop-shadow(2px 1px 12px yellow);
+  filter:drop-shadow(8px 1px 8px #ccff66);
 
 }
 
 .java {
-  filter:drop-shadow(2px 1px 12px orange);
+  filter:drop-shadow(8px 1px 8px #ff6666);
 
 }
 
 .ruby {
-  filter:drop-shadow(2px 1px 12px red);
+  filter:drop-shadow(8px 1px 8px #ff0000);
 
 }
 
 .cpp {
-  filter:drop-shadow(2px 1px 12px pink);
+  filter:drop-shadow(8px 1px 8px fuchsia);
 
 }
 
@@ -131,7 +131,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-zoom object-fit_cover w3-circle avatar1" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg">
+  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-opacity object-fit_cover w3-circle avatar1" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -170,11 +170,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<div class="w3-padding-large w3-animate-opacity" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
 
-    <img style="border:2px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-zoom w3-card-2 w3-circle portrait object-fit_cover">
+    <img style="border:2px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Hello, world!</span></h1>
     <h2>I'm David Samuel.</h2>
     <h3>Data Architect and Founder of MusicMind Inc.</h3>
@@ -184,7 +184,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
     </div>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="w3-animate-opacity w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Prologue</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>My passion for image processing, and computer vision developed during my data visualization course in my Data Science Graduate program through Southern Methodist University in 2016. However, my passion for the arts and music emerged long before my master’s degree, starting in my youth. When I realized I could put my love for making music and my love for visualizing data intelligently together, I became inspired to create thoughtful masterpieces through data transformation, and visualization techniques. 
@@ -196,33 +196,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
     <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
-    <div class="w3-dark-grey">
-      <div class="w3-cyan python" style="height:28px;width:95%"></div>
+    <div class="w3-round">
+      <div class="w3-cyan python w3-round" style="height:28px;width:95%"></div>
     </div>
     <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
       Javascript</p>
-    <div class="w3-dark-grey">
-      <div class="w3-green javascript" style="height:28px;width:90%"></div>
+    <div class="w3-round">
+      <div class="w3-green javascript w3-round" style="height:28px;width:90%"></div>
     </div>
     <p class="w3-wide w3-text-yellow"><i class="devicon-swift-plain"></i>
       Swift</p>
-    <div class="w3-dark-grey">
-      <div class="w3-yellow swift" style="height:28px;width:85%"></div>
+    <div class="w3-round">
+      <div class="w3-yellow swift w3-round" style="height:28px;width:85%"></div>
     </div>
     <p class="w3-wide w3-text-orange"><i class="devicon-java-plain"></i>
       Java</p>
-    <div class="w3-dark-grey">
-      <div class="w3-orange java" style="height:28px;width:80%"></div>
+    <div class="w3-round">
+      <div class="w3-orange java w3-round" style="height:28px;width:80%"></div>
     </div>
     <p class="w3-wide w3-text-red"><i class="devicon-ruby-plain"></i>
       Ruby</p>
-    <div class="w3-dark-grey">
-      <div class="w3-red ruby" style="height:28px;width:70%"></div>
+    <div class="w3-round">
+      <div class="w3-red ruby w3-round" style="height:28px;width:70%"></div>
     </div>
     <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
       C++</p>
-    <div class="w3-dark-grey">
-      <div class="w3-pink cpp" style="height:28px;width:65%"></div>
+    <div class="w3-round">
+      <div class="w3-pink cpp w3-round" style="height:28px;width:65%"></div>
     </div><br>
     
 
