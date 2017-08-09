@@ -28,8 +28,10 @@ video {
   height: 200px;
 }
 .portrait {
-    width: 311px;
-    height: 311px;
+  width: 180px;
+  height: 180px;
+  
+
 }
 
 .papers {
@@ -38,8 +40,15 @@ video {
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 72px;
+  height: 72px;
+}
+
+.avatar1 {
+  width: 72px;
+  height: 72px;
+  -webkit-filter: hue-rotate(180deg); 
+    filter: hue-rotate(180deg);
 }
 
 .object-fit_cover {
@@ -82,7 +91,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-zoom w3-hover-black object-fit_cover w3-circle avatar" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1">
+  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-zoom object-fit_cover w3-circle avatar1" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -126,8 +135,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
 
     <img style="border:2px solid white" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1" alt="David Samuel's Portrait" class="w3-animate-zoom w3-card-2 w3-circle portrait object-fit_cover">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">David Samuel.</span></h1>
-    <h2>Data Architect and Founder of MusicMind Inc.</h2>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hello, world!</span></h1>
+    <h2>I'm David Samuel.</h2>
+    <h3>Data Architect and Founder of MusicMind Inc.</h3>
     <div class="w3-opacity">
     <p>M.S. Data Science, Southern Methodist University 2017</p>
     <p>B.S. Engineering, University of Massachusetts 2009</p>
@@ -138,8 +148,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
     <h2 class="w3-text-light-grey">David Samuel</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>All my life I have had a passion in music creation, discovery, and sharing, but had no way to truly express myself as a Sound Arranger.
-        My pursuit of making music shifted to a desire to create artful music experiences.  My skillset, coupled with knowledge, and access to
-        powerful computing tools made available by Silicon Valley giants, I have created a simple solution to my problem which has vast implications for 
+        My pursuit of making music shifted to a desire to create artful music experiences.  By combining my skillset with the knowledge and access to
+        powerful computing tools, made available by Silicon Valley giants, I have created a simple solution to my problem; which has vast implications for 
         music, video, augmented reality, and social networking.  MusicMind is inspired by you, the listener, who is looking for a deeper
         connection to the artists and content creators that you love.</p>
     <h3 class="w3-padding-16 w3-text-light-grey">Programming Languages</h3>
@@ -260,17 +270,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
         <p class="w3-black"><i><b>Blockchain Research</b></i></p>
-        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
         <p class="w3-black"><i><b>Emotional Analysis of presidential candidates using Facial Image Recognition</b></i></p>
 
       </div>
 
       <div class="w3-half">
-        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
         <p class="w3-black"><i><b>Natural Language Processing on Twitter</b></i></p>
-        <iframe style="width:100%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+        <iframe style="width:50%" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
         <p class="w3-black"><i><b>Analyzing Behavior and Perception on Wikipedia</b></i></p>
 
       </div>
