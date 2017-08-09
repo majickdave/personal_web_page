@@ -30,7 +30,39 @@ video {
 .portrait {
   width: 180px;
   height: 180px;
-  
+/*    -webkit-filter: hue-rotate(180deg); 
+    filter: hue-rotate(180deg);*/
+  filter:drop-shadow(8px 8px 10px indigo);
+
+}
+
+.python {
+  filter:drop-shadow(2px 1px 12px white);
+
+}
+
+.javascript {
+  filter:drop-shadow(2px 1px 12px white);
+
+}
+
+.swift {
+  filter:drop-shadow(2px 1px 12px white);
+
+}
+
+.java {
+  filter:drop-shadow(2px 1px 12px white);
+
+}
+
+.ruby {
+  filter:drop-shadow(2px 1px 12px white);
+
+}
+
+.cpp {
+  filter:drop-shadow(2px 1px 12px white);
 
 }
 
@@ -48,7 +80,7 @@ video {
   width: 72px;
   height: 72px;
   -webkit-filter: hue-rotate(180deg); 
-    filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
 }
 
 .object-fit_cover {
@@ -87,11 +119,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 <body class="w3-black">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
 
+<script>
+
+
+
+</script>
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-zoom object-fit_cover w3-circle avatar1" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1">
+  <img style="border:2px solid white" class="w3-center w3-margin w3-animate-zoom object-fit_cover w3-circle avatar1" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -134,7 +174,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
 
-    <img style="border:2px solid white" src="https://dl.dropboxusercontent.com/s/u1dfelhcg707zzm/my_face.JPG?raw=1" alt="David Samuel's Portrait" class="w3-animate-zoom w3-card-2 w3-circle portrait object-fit_cover">
+    <img style="border:2px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-zoom w3-card-2 w3-circle portrait object-fit_cover">
     <h1 class="w3-jumbo"><span class="w3-hide-small">Hello, world!</span></h1>
     <h2>I'm David Samuel.</h2>
     <h3>Data Architect and Founder of MusicMind Inc.</h3>
@@ -145,46 +185,44 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">David Samuel</h2>
+    <h2 class="w3-text-light-grey">Prologue</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>All my life I have had a passion in music creation, discovery, and sharing, but had no way to truly express myself as a Sound Arranger.
-        My pursuit of making music shifted to a desire to create artful music experiences.  By combining my skillset with the knowledge and access to
-        powerful computing tools, made available by Silicon Valley giants, I have created a simple solution to my problem; which has vast implications for 
-        music, video, augmented reality, and social networking.  MusicMind is inspired by you, the listener, who is looking for a deeper
-        connection to the artists and content creators that you love.</p>
+    <p>My passion for image processing, and computer vision developed during my data visualization course in my Data Science Graduate program through Southern Methodist University in 2016. However, my passion for the arts and music emerged long before my master’s degree, starting in my youth. When I realized I could put my love for making music and my love for visualizing data intelligently together, I became inspired to create thoughtful masterpieces through data transformation, and visualization techniques. 
+    </p>
     <h3 class="w3-padding-16 w3-text-light-grey">Programming Languages</h3>
 
 
 <!-- Skill graph -->
-    <p class="w3-wide w3-text-cyan"><i class="devicon-python-plain"></i>
+
+    <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
     <div class="w3-dark-grey">
-      <div class="w3-cyan" style="height:28px;width:95%"></div>
+      <div class="w3-cyan python" style="height:28px;width:95%"></div>
     </div>
     <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
       Javascript</p>
     <div class="w3-dark-grey">
-      <div class="w3-green" style="height:28px;width:90%"></div>
+      <div class="w3-green javascript" style="height:28px;width:90%"></div>
     </div>
     <p class="w3-wide w3-text-yellow"><i class="devicon-swift-plain"></i>
       Swift</p>
     <div class="w3-dark-grey">
-      <div class="w3-yellow" style="height:28px;width:85%"></div>
+      <div class="w3-yellow swift" style="height:28px;width:85%"></div>
     </div>
     <p class="w3-wide w3-text-orange"><i class="devicon-java-plain"></i>
       Java</p>
     <div class="w3-dark-grey">
-      <div class="w3-orange" style="height:28px;width:80%"></div>
+      <div class="w3-orange java" style="height:28px;width:80%"></div>
     </div>
     <p class="w3-wide w3-text-red"><i class="devicon-ruby-plain"></i>
       Ruby</p>
     <div class="w3-dark-grey">
-      <div class="w3-red" style="height:28px;width:70%"></div>
+      <div class="w3-red ruby" style="height:28px;width:70%"></div>
     </div>
     <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
       C++</p>
     <div class="w3-dark-grey">
-      <div class="w3-pink" style="height:28px;width:65%"></div>
+      <div class="w3-pink cpp" style="height:28px;width:65%"></div>
     </div><br>
     
 
