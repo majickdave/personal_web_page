@@ -105,6 +105,7 @@ a {
 .iframe {
   height: 400px;
   width: 70%;
+  margin-top: 40px;
 /*  padding: 40px;
   filter:drop-shadow(5px 4px 5px silver);*/
 
@@ -191,7 +192,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="mobile w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-white w3-opacity w3-hover-opacity-off w3-center w3-small">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#research" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
     <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
@@ -200,9 +201,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 </div>
 
   <!-- About Section -->
-<div class="w3-white w3-padding-large w3-animate-opacity" id="main">
+<div class="w3-padding-large w3-animate-opacity" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-darkgrey" id="home">
+  <header class="w3-container w3-padding-32 w3-center" id="home">
   <div style="padding: 30px" class="w3-card-4">
     <img style="border:2px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1><span class="w3-hide-small">Hello, world!</span></h1>
@@ -215,11 +216,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   <div class="w3-content w3-justify w3-padding-64" id="about">
     <h2 class="w3-text-black">Prologue</h2>
 
-    <p class="w3-opacity">My passion for image processing, and computer vision developed while enrolled in a graduate data visualization course at Southern Methodist University in the summer of 2016. However, my passion for music and the arts emerged long before graduate school; I began building websites, and storing and indexing digital media, games, and software at a very young age.  My interest in music fused with my love for visualizing data, to create thoughtful masterpieces generatively through code.  MusicMind, is a project that is a culmination of my deep love for learning, computing, and art.
+    <p class="w3-opacity">My passion for image processing, and computer vision developed while enrolled in a graduate data visualization course at Southern Methodist University in the summer of 2016. However, my passion for music and the arts emerged long before graduate school; I began building websites, and storing and indexing digital media, games, and software at a very young age.  My interest in music fused with my love for visualizing data to create thoughtful masterpieces generatively through code.  MusicMind, is a project that is a culmination of my deep love for learning, computing, and art.
     </p>
+</div>
+</header>
 
-        <h2 class="w3-padding-16 w3-text-black w3-animate">Programming Languages</h2>
-
+<h2 class="w3-padding-16 w3-text-black w3-animate">Programming Languages</h2>
 
 <!-- Skill graph -->
   <div class=" w3-black w3-round-xxlarge w3-card-4" style="padding: 20px">
@@ -279,10 +281,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   </div>
 
   <!-- End About Section -->
-  </div>
-  </div>
+</div>
 
-  </header>
+
 
   <!-- Grid for Projects -->
     <div class="w3-padding-64 w3-content" id="projects">
@@ -293,7 +294,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
         
          <a href="https://github.com/MusicMind/MusicMind-iOS">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px; max-width: 100%;"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height:300px; max-width: 100%;"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
           </img>
          
           <div class="w3-container">
@@ -342,10 +343,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   </div>
 
   <!-- Research Projects Section -->
-  <div class="w3-padding-64 w3-content" id="research">
+  <div class="w3-padding-64">
     <h2 class="w3-white">Research Projects</h2>
+    </div>
+    <div class="w3-content" id="research">
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
-    <div class="w3-padding-64">
+
       <div style="margin-bottom: 30px" class="w3-card-4">
           <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
         <div class="w3-container">
@@ -356,7 +359,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
 
       </div>
-    </div>
 
     <div style="margin-bottom: 30px" class="w3-card-4">
       <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb">
@@ -368,8 +370,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
               </a>
         </div>
     </div>
-
-
 
     <div style="margin-bottom: 30px" class="w3-card-4">
       <a target="_blank" href="http://p5-emoji.herokuapp.com/index.html"> 
@@ -396,14 +396,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
   </div>
 
+  <div class="w3-padding-64">
+  <h2 class="w3-white">Research Papers</h2>
+  </div>
   <div class="w3-padding-64 w3-center w3-content">
-    <h2 class="w3-white">Research Papers</h2>
-  
     <!-- Grid for Papers -->
 <!--     <div class="w3-black w3-center w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
     <div class="w3-content">
-        <div style="margin-top: 30px" class="w3-card-4" >
-        
+        <div style="margin-bottom: 30px" class="w3-black w3-card-4">
+        <div class="w3-padding-64 w3-content">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view">
           <div class="w3-container">
@@ -414,7 +415,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
     </div>
     <div class="w3-padding-64 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+        <div style="margin-bottom: 30px" class="w3-black w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOdXk3ei10WkNiNjQ/view">
           <div class="w3-container">
@@ -425,7 +426,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
     </div>
     <div class="w3-padding-64 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+        <div style="margin-bottom: 30px" class="w3-black w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
           <div class="w3-container">
@@ -436,7 +437,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
     </div>
     <div class="w3-padding-64 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+        <div style="margin-bottom: 30px" class="w3-black w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOSUFuRnI3ZEJHVlk/view">
           <div class="w3-container">
@@ -451,13 +452,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   <!-- Contact Section -->
  <!-- Footer -->
  <div class="w3-center w3-opacity w3-content" id="contact">
-<!-- <h2 class="w3-white">Let's Connect.</h2> -->
+
 
 <footer class="footer web w3-content w3-xxlarge w3-white">
 
   <a href="https://www.linkedin.com/in/datascienceinsight" target="_blank"><i class="fa fa-linkedin"></i></a>
   <a href="https://github.com/majickdave" target="_blank"><i class="fa fa-github "></i></a>
-  <a href="https://dl.dropboxusercontent.com/s/8m0whxxas6z3f9p/CV%20of%20David%20Samuel.pdf?raw=1" target="_blank"><i class="fa fa-dropbox "></i></a>
   <a href="mailto: dave@musicmindcompany.com?body=Greetings, My name is [yourname], I'd love to chat about the future with you."><i class="fa fa-paper-plane-o"></i></a>
   <a href="https://angel.co/musicmindco" target="_blank"><i class="fa fa-angellist"></i></a>
   <a href="https://www.facebook.com/musicmindcorp/" target="_blank"><i class="fa fa-facebook-official"></i></a>
@@ -477,5 +477,5 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 </footer>
 </div>
 </body>
-
+<h2 class="w3-opacity w3-animate-fading">Let's Connect.</h2>
 </html>
