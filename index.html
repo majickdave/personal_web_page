@@ -28,6 +28,10 @@ video {
   width: 100%;
 }
 
+a {
+  target: _blank;
+}
+
 .portrait {
   width: 180px;
   height: 180px;
@@ -70,7 +74,7 @@ video {
 }
 .projects {
   filter:drop-shadow(5px 4px 5px silver);
-  width: 100%;
+  max-width: 100%;
   margin-top: 40px;
   margin-bottom: 40px;
 
@@ -78,6 +82,7 @@ video {
 .papers {
   margin-top: 40px;
   margin-bottom: 40px;
+  filter:drop-shadow(1px 1px 10px white);
 }
 
 .avatar {
@@ -96,7 +101,7 @@ video {
 
 .iframe {
   height: 400px;
-  width: 100%;
+  width: 50%;
   filter:drop-shadow(5px 4px 5px silver);
 
 }
@@ -112,6 +117,8 @@ video {
 .object-fit_none {
   object-fit: none
 }
+.object-fit_scale-down{
+  object-fit: scale-down;}
 
     .mobile{
   display:none;
@@ -254,14 +261,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 <div class="w3-padding-64 w3-content">
   <h2 class="w3-white">References</h2>  
     <div class=" w3-black w3-round-xxlarge w3-card-4" style="padding: 20px">
+    <div class="w3-card-4">
+      <a href="https://www.linkedin.com/in/danielwengels/">
       <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right">
-      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/danielwengels/" data-format="hover" data-related="false"></script></span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
-      <p>Dr. Engels was my most influential mentor at SMU.</p><br>
-    <div />
+      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels.
+      </a>
+      </span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
+      <i><p>Dr. Engels was my most influential mentor at SMU.</p></i><br>
+    </div>
+    <div class="w3-card-4">
+      <a href="https://www.linkedin.com/in/ginger-holt-7461161/">
       <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
-      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt. <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-      <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ginger-holt-7461161/" data-format="hover" data-related="false"></script></span>Manager, Data Science at Facebook.</p>
-      <p>Dr. Holt taught my capstone class in Data Science.</p><br>
+      <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt.</a>
+      </span>Manager, Data Science at Facebook.</p>
+      <i><p>Dr. Holt taught my capstone class in Data Science.</p></i><br>
+
     </div>
   </div>
 
@@ -270,76 +284,159 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="research">
-  <h2 class="w3-white">Research Projects</h2>
-   <div class="w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px">
-   <div class="w3-half">
-        <div class="w3-center">
-
-          <img class="projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1"> <a href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><p>Movie Recommendation Engine</p></a>
-
-        </div>
-
-        <div class="w3-center">
-          <img class="projects" src="https://dl.dropboxusercontent.com/s/87atc5an6yji8az/emoji%20cloud.png?raw=1"> <a href="https://github.com/majickdave/NIST_digits/blob/master/Lab2FinalResubmission.ipynb"><p>Numeral image data classification using various machine learning models</p>
-          </a>
-        </div>
-
-    </div>
-    <div class="w3-half"> 
-    <div class="w3-center">
-
-          <img class="projects" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1"> <a href="http://p5-emoji.herokuapp.com/index.html"><p>Mockup of Music to Emoji Translation</p></a>
-
-    </div>
-
-      <div class="w3-center">
-          <img class="projects" src="https://dl.dropboxusercontent.com/s/4rkp246zqvho15j/emoji%20cloud.png?raw=1"> <a href="https://github.com/majickdave/Quantifying-Case6/blob/master/Case%20Study%20Unit%206.ipynb"><p>Real-Time Location Study using WiFi</p></a>
-
-    </div>
-    </div>
-    </div>
-<!--           <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark"><h4><a href="https://github.com/majickdave/NIST_digits/blob/master/Lab2FinalResubmission.ipynb"> Computer Vision</a></h4><p>NIST_digits - Numeral image data classification using various machine learning models</p></blockquote>
-          <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> -->
-
-    <h2 class="w3-white">Research Papers</h2>
-<!--     <hr style="width:200px" class="w3-opacity"> -->
-
-    <!-- Grid for Papers -->
+    <h2 class="w3-white">Research Projects</h2>
     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px">
+      <div class="w3-card-4">
+          <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
+        <div class="w3-container">
+            <h4><b>Movie Recommendation Engine</b></h4>
+          </a>
+              <a target="_blank" href="https://turi.com/"><p>Written in Python using Graphlab</p>
+              </a>
+        </div>
 
-        <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view"><p style="margin-bottom: 30px" class="w3-black"><i><b>Blockchain Research</b></i></p></a>
-        <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOdXk3ei10WkNiNjQ/view"><p style="margin-bottom: 30px" class="w3-black"><i><b>Facial Image Emotional Analysis</b></i></p></a>
-    
+      </div>
 
-        <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view"><p style="margin-bottom: 30px" class="w3-black"><i><b>Natural Language Processing</b></i></p></a>
-        <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-        <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOSUFuRnI3ZEJHVlk/view"><p style="margin-bottom: 30px" class="w3-black"><i><b>Perceptions of Wikipedia</b></i></p></a>
+    <div class="w3-card-4">
+      <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb">
+        <img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/87atc5an6yji8az/emoji%20cloud.png?raw=1"> 
+        <div class="w3-container">
+            <h4><b>Handwritten Digits image data classification.</b></h4>
+      </a>
+              <a target="_blank" href="http://scikit-learn.org/stable/"><i><p>Written in Python using ML models developed in Pylab, Matlab, SciKit-Learn.</p></i>
+              </a>
+        </div>
+    </div>
+
+
+
+    <div class="w3-card-4">
+      <a target="_blank" href="http://p5-emoji.herokuapp.com/index.html"> 
+        <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1">     
+          <div class="w3-container">
+            <h4><b>Mockup of Music to Emoji Translation</b></h4>
+      </a>
+              <a target="_blank" href="https://p5js.org/"><i><p>Written in Javascript using p5.js</p></i>
+              </a>
+          </div>
+    </div>
+
+    <div class="w3-card-4">
+      <a href="https://github.com/majickdave/Quantifying-Case6/blob/master/Case%20Study%20Unit%206.ipynb">
+          <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/4rkp246zqvho15j/emoji%20cloud.png?raw=1">
+
+        <div class="w3-container">
+            <h4><b>Real-Time Location Study using WiFi</b></h4>
+      </a>
+              <i><p>Written in Python</p></i>
+        </div>
 
     </div>
+
+  </div>
+
+<div class="w3-padding-64 w3-content" id="research">
+  <h2 class="w3-white">Research Papers</h2>
+  
+    <!-- Grid for Papers -->
+    <div class="w3-black w3-center w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px">
+        <div style="margin-bottom: 30px" class="w3-card-4">
+        
+          <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view">
+          <div class="w3-container">
+              <h4><b>Blockchain Research: Bitcoin, Ethereum, and Beyond.</b></h4>
+          </a>
+              <i><p>Written in 2016 for Network Security at SMU</p></i>
+          </div>  
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+          <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOdXk3ei10WkNiNjQ/view">
+          <div class="w3-container">
+              <h4><b>Facial Image Emotional Analysis</b></h4>
+          </a>
+              <i><p>Written in 2016 for Data Science Capstone Course at SMU</p></i>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+          <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
+          <div class="w3-container">
+              <h4><b>Natural Language Processing in Twitter data</b></h4>
+          </a>
+              <i><p>Written in 2016 for Database Management at SMU</p></i>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+          <iframe class="iframe w3-round" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
+          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOSUFuRnI3ZEJHVlk/view">
+          <div class="w3-container">
+              <h4><b>Multivariate Analysis of Wikipedia Perceptions</b></h4>
+          </a>
+              <i><p>Written in 2016 for Experimental Statistics at SMU</p></i>
+          </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Grid for Projects -->
-  <div class="w3-padding-64 w3-content">
-    <h2 class="w3-white">Data Visualization Projects</h2>
-      <div style="padding: 20px" class="w3-padding-64 w3-center w3-black w3-round-xxlarge w3-card-4" id="projects">
-        <video style="width:75%" controls muted>
-          <source src="https://dl.dropboxusercontent.com/s/7lm1qcbodmtg9q7/short_viz.mp4?raw=1" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <a href="https://github.com/majickdave/Viz_Sketch5"><p style="margin: 30px" class="w3-black"><i><b>iOS live video pixel range inversion and texture map to 3D sphere</b></i></p></a>
-        <video style="width:75%" controls muted>
-          <source src="https://dl.dropboxusercontent.com/s/4z1mvj0ipvrdexy/ascii_movie.mp4?raw=1" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <a href="https://github.com/majickdave/swift-ascii-art"><p style="margin: 30px" class="w3-black"><i><b>Live video ASCII art.</b></i></p></a>
-        <video  style="width:75%" controls>
+<div class="w3-center w3-padding-64 w3-content" id="projects">
+  <h2 class="w3-white">Programming Projects using camera and Data Visualization</h2>
+    <div class="w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px">
 
-          <source src="https://dl.dropboxusercontent.com/s/05tu24ieb87mex5/DNA.mp4?raw=1" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-          <a href="https://github.com/majickdave/mm-spotify"><p style="margin: 30px" class="w3-black"><i><b>Javascript Animation.</b></i></p></a>
+        <div style="margin-bottom: 30px" class="w3-card-4">
+         <a href="https://github.com/MusicMind/MusicMind-iOS">
+          <img class="w3-round-xxlarge" style="max-height:400px"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
+          </img>
+         
+          <div class="w3-container">
+              <h4><b>MusicMind iOS - Shoot videos with your music</b></h4>
+          </a>
+              <a target="_blank" href="https://developer.spotify.com/web-api/"> <i><p>Written in Swift using Spotify Web API</p></i>
+          </a>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+        <a href="https://github.com/majickdave/Viz_Sketch5">
+          <img class="w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
+          </img>
+          
+          <div class="w3-container">
+              <h4><b>iOS live video pixel range inversion and texture map to 3D spheres</b></h4>
+          </a>
+              <a href="http://openframeworks.cc/setup/iphone"> <i><p>Written in C# using OpenFrameWorks for iOS</p></i></a>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+          <img class="w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
+          </img>
+          <a href="https://github.com/majickdave/Viz2_4">
+          <div class="w3-container">
+              <h4><b>Live Video texture Mapping.</b></h4>
+          </a>
+              <a href="http://openframeworks.cc/setup/xcode"> <i><p>Written in C++ using OpenFrameWorks for osx</p></i></a>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 30px" class="w3-card-4">
+         <a href="https://github.com/majickdave/swift-ascii-art">
+          <img class="w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
+          </img>
+         
+          <div class="w3-container">
+              <h4><b>ASCII art for iPhone</b></h4>
+          </a>
+            <i><p>Written in Swift</p></i>
+
+          </div>
+        </div>
 
 
     </div>
