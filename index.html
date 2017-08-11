@@ -72,6 +72,10 @@ a {
   filter:drop-shadow(8px 1px 8px fuchsia);
 
 }
+
+.skills {
+  margin: 10px;
+}
 .projects {
   /*filter:drop-shadow(5px 4px 5px white);*/
   max-width: 75%;
@@ -79,6 +83,16 @@ a {
   padding: 40px;
 
 }
+
+#research_projects {
+  margin-bottom: 30px; 
+  max-width: 75%; 
+  max-height: 100%;
+
+  border:1px solid #c1c1c1
+
+}
+
 
 #papers {
   margin-top: 40px;
@@ -199,37 +213,40 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 </div>
 
   <!-- About Section -->
-<header class="w3-container w3-padding-32" id="home">
+  
 <div class="w3-padding-large w3-animate-opacity w3-center" id="main" >
   <!-- Header/Home -->
-  <div class="w3-card-2 w3-white  w3-round" style="border:1px solid #c1c1c1; max-width: 50%; max-height: 100%">
-  
+  <div class="w3-card-2 w3-white w3-round" style="border:1px solid #c1c1c1; max-width: 75%; max-height: 100%">
+  <header class="w3-container" id="home">
   <div style="padding: 30px" >
     <img style="border:4px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
-    <h1><span>David Samuel</span></h1><br>
-    <h3>Founder of MusicMind</h3>
+    <h1><span>David Samuel</span></h1>
+    <h3>Founder of MusicMind</h3><br>
     <div class="w3-opacity">
       <a target="_blank" href="https://datascience.smu.edu/"><p>M.S. Data Science, Southern Methodist University 2017</p></a>
       <a target="_blank" href="https://engineering.umass.edu/"><p>B.S. Engineering, University of Massachusetts 2009</p></a>
     </div>
-  <div class="w3-content w3-justify w3-padding-64" id="about">
+  <div class="w3-content w3-justify w3-padding-large" id="about">
     <h2>Prologue</h2>
-
+    <hr>
     <p class="w3-opacity">My passion for image processing, and computer vision developed while enrolled in a graduate data visualization course at Southern Methodist University in the summer of 2016. However, my passion for music and the arts emerged long before graduate school; I began building websites, and storing and indexing digital media, games, and software at a very young age.  My interest in music fused with my love for visualizing data to create thoughtful masterpieces generatively through code.  MusicMind, is a project that is a culmination of my deep love for learning, computing, and art.
     </p>
-  </div>
 </div>
 </header>
+</div>
 
 
-<h2 class="w3-padding-16 w3-text-black w3-animate">Programming Languages</h2>
 
 <!-- Skill graph -->
-  <div class=" w3-black w3-round-xxlarge w3-card-4" style="padding: 20px; border:4px solid gold">
+<div class="w3-padding-32">
+  <div class="w3-black w3-round w3-card-2 w3-justify" style="max-width: 75%; max-height: 50%">
+  <div class="w3-padding-16" style="padding-left: 20px">
+  <h2 class="w3-padding-16">Programming Languages</h2><br>
+  
     <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
     <div class="w3-round">
-      <div class="w3-cyan python w3-round" style="height:28px;width:95%"></div>
+      <div class="w3-cyan w3-round python" style="height:28px;width:95%"></div>
     </div>
     <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
       Javascript</p>
@@ -254,55 +271,57 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
     <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
       C++</p>
     <div class="w3-round">
-      <div class="w3-pink cpp w3-round" style="height:28px;width:65%"></div>
-    </div><br>
-    
+      <div class="w3-pink cpp w3-round" style="height:28px;width:65%"></div><br>
+    </div>
+    </div>
   </div>
+</div>
 
 <!--     References -->
-<div class="w3-padding-64 w3-content">
-  <h2>References</h2>  
-    <div class=" w3-black w3-round-xxlarge w3-card-4" style="padding: 20px; border:4px solid #00ff99">
-    <div class="w3-card-4">
+
+<div class="w3-padding-large w3-round w3-black w3-card-2" style="max-width: 75%; max-height: 50%">
+ 
+    <div class="w3-round w3-card-2 w3-justify">
+      <h2>References</h2><br>
+
       <a href="https://www.linkedin.com/in/danielwengels/">
       <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels.
       </a>
       </span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
       <i><p>Dr. Engels was my most influential mentor at SMU.</p></i><br>
-    </div>
-    <div class="w3-card-4">
+
       <a href="https://www.linkedin.com/in/ginger-holt-7461161/">
       <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt.</a>
       </span>Manager, Data Science at Facebook.</p>
       <i><p>Dr. Holt taught my capstone class in Data Science.</p></i><br>
-
-    </div>
   </div>
 
   <!-- End About Section -->
 </div>
 
 
-
+<div class="w3-padding-32">
   <!-- Research Projects Section -->
-  <div class="w3-padding-64 w3-card-4 w3-white w3-container" id="projects">
-    <h2>Research Projects</h2>
+  <div class="w3-card-2 w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 75%;">
+    <h2>Research Projects</h2><br>
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
-
-      <div class="w3-content w3-padding-16 w3-card-4" style="margin-bottom: 30px" id="research_projects">
-          <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects w3-white" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
+    <div class="w3-round" id="research_projects">
+      <div class="w3-justify w3-content w3-padding-16 w3-card-2 w3-black">
+          <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
         <div class="w3-container">
             <h4><b>Movie Recommendation Engine</b></h4>
           </a>
               <a target="_blank" href="https://turi.com/"><p>Written in Python using Graphlab</p>
               </a>
         </div>
-
+        </div>
       </div>
+ <hr>
 
-    <div style="margin-bottom: 30px" class="w3-card-4">
+    <div class="w3-round" id="research_projects">
+      <div class="w3-justify w3-content w3-padding-16 w3-card-2">
       <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb">
         <img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/87atc5an6yji8az/emoji%20cloud.png?raw=1"> 
         <div class="w3-container">
@@ -311,9 +330,12 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
               <a target="_blank" href="http://scikit-learn.org/stable/"><i><p>Written in Python using ML models developed in Pylab, Matlab, SciKit-Learn.</p></i>
               </a>
         </div>
-    </div>
 
-    <div style="margin-bottom: 30px" class="w3-card-4">
+    </div>
+    </div><hr>
+
+<div class="w3-round" id="research_projects">
+    <div class="w3-justify w3-content w3-padding-16 w3-card-2 w3-black">
       <a target="_blank" href="http://p5-emoji.herokuapp.com/index.html"> 
         <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1">     
           <div class="w3-container">
@@ -323,8 +345,9 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
               </a>
           </div>
     </div>
-
-    <div style="margin-bottom: 30px" class="w3-card-4">
+    </div><hr>
+<div class="w3-round" id="research_projects">
+    <div class="w3-justify w3-content w3-padding-16 w3-card-2">
       <a href="https://github.com/majickdave/Quantifying-Case6/blob/master/Case%20Study%20Unit%206.ipynb">
           <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/4rkp246zqvho15j/emoji%20cloud.png?raw=1">
 
@@ -335,14 +358,14 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
         </div>
 
     </div>
-
-  </div>
+</div>
+</div><br>
 
   <!-- Grid for Projects -->
     <div class="w3-padding-64 w3-content">
-    <h2 class="w3-white">Camera and Data Visualization</h2>
-<div class="w3-center w3-black w3-content w3-card-4 w3-round-xxlarge" style="border:20px solid white">
-
+    
+<div class="w3-justify w3-center w3-black w3-content w3-card-4 w3-round" style="border:20px solid white">
+  <h2>Camera and Data Visualization</h2>
     <div  style="margin-top: 10px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge">
 
         
