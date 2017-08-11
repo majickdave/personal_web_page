@@ -84,6 +84,7 @@ a {
 #papers {
   margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 75%;
 /*  filter:drop-shadow(1px 1px 10px white);*/
 }
 
@@ -167,14 +168,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
     <i class="fa fa-file-pdf-o w3-xxlarge"></i>
     <p>RESUME/CV</p>
   </a>
+
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
     <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-microchip w3-xxlarge"></i>
     <p>RESEARCH</p>
     </a>
-  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-code w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
+
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-paper-plane-o w3-xxlarge"></i>
     <p>CONTACT</p>
@@ -290,7 +293,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
         
          <a href="https://github.com/MusicMind/MusicMind-iOS">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px; max-width: 100%;"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
           </img>
          
           <div class="w3-container">
@@ -303,7 +306,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
     <div  style="margin-top: 40px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge">
         <a href="https://github.com/majickdave/Viz_Sketch5">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px; max-width: 100%;" src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
           </img>
           
           <div class="w3-container">
@@ -314,7 +317,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
 
     <div  style="margin-top: 40px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px; max-width: 100%;" src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
           </img>
           <a href="https://github.com/majickdave/Viz2_4">
           <div class="w3-container">
@@ -325,7 +328,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
 
     <div  style="margin-top: 40px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge"><a href="https://github.com/majickdave/swift-ascii-art">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px" src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height:400px; max-width: 100%;" src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
           </img>
          
           <div class="w3-container">
@@ -342,6 +345,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
   <div class="w3-padding-64 w3-content" id="research">
     <h2 class="w3-white">Research Projects</h2>
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
+    <div class="w3-padding-64">
       <div style="margin-bottom: 30px" class="w3-card-4">
           <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
         <div class="w3-container">
@@ -352,6 +356,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
         </div>
 
       </div>
+    </div>
 
     <div style="margin-bottom: 30px" class="w3-card-4">
       <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb">
@@ -391,12 +396,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
 
   </div>
 
-<div class="w3-padding-64 w3-content" id="research">
-  <h2 class="w3-white">Research Papers</h2>
+  <div class="w3-padding-64 w3-content">
+    <h2 class="w3-white">Research Papers</h2>
   
     <!-- Grid for Papers -->
 <!--     <div class="w3-black w3-center w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
-        <div style="margin-bottom: 30px" class="w3-card-4" id="papers">
+    <div class="w3-content">
+        <div style="margin-top: 30px" class="w3-card-4" >
         
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view">
@@ -406,7 +412,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
               <i><p>Written in 2016 for Network Security at SMU</p></i>
           </div>  
         </div>
-
+    </div>
+    <div class="w3-padding-64 w3-content">
         <div style="margin-bottom: 30px" class="w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOdXk3ei10WkNiNjQ/view">
@@ -416,7 +423,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
               <i><p>Written in 2016 for Data Science Capstone Course at SMU</p></i>
           </div>
         </div>
-
+    </div>
+    <div class="w3-padding-64 w3-content">
         <div style="margin-bottom: 30px" class="w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
@@ -426,7 +434,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
               <i><p>Written in 2016 for Database Management at SMU</p></i>
           </div>
         </div>
-
+    </div>
+    <div class="w3-padding-64 w3-content">
         <div style="margin-bottom: 30px" class="w3-card-4">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOSUFuRnI3ZEJHVlk/view">
@@ -436,7 +445,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica"}
               <i><p>Written in 2016 for Experimental Statistics at SMU</p></i>
           </div>
         </div>
-<!--     </div> -->
+    </div>
 </div>
 
   <!-- Contact Section -->
