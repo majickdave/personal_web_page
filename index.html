@@ -91,12 +91,10 @@ a {
 
 }
 
+#research_papers {
+  max-width: 50%; 
+  max-height: 100%;
 
-#papers {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  max-width: 75%;
-/*  filter:drop-shadow(1px 1px 10px white);*/
 }
 
 .avatar {
@@ -115,7 +113,7 @@ a {
 
 .iframe {
   height: 400px;
-  width: 100%;
+  width: 50%;
 /*  margin-top: 40px;*/
 /*  padding: 40px;
   filter:drop-shadow(5px 4px 5px silver);*/
@@ -166,6 +164,9 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 <body  style="background-color: #f2f2f2">
 
 
+
+<!-- Navbar on small screens (Hidden on medium and large screens) *******************************************************-->
+
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-white w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -200,7 +201,10 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 </nav>
 
+
+
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
+
 <div class="mobile w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
@@ -210,13 +214,16 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
   </div>
 </div>
 
-  <!-- About Section -->
+
+
+
+<!-- Begin Bio **********************************************************************************************************-->
   
 <div class="w3-padding-large w3-animate-opacity w3-center" id="main" >
   <!-- Header/Home -->
-  <div class="w3-card-2 w3-white w3-round" style="border:1px solid #c1c1c1; max-width: 100%">
+  <div class="w3-card-2 w3-white w3-round" style="border:1px solid #c1c1c1; max-width: 100%; margin: 20px">
   <header class="w3-container" id="home">
-  <div style="padding: 30px" >
+  <div style="margin-top: 30px">
     <img style="border:4px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1><span>David Samuel</span></h1>
     <h3>Founder of MusicMind</h3><br>
@@ -235,7 +242,8 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 
 
-<!-- Skill graph -->
+<!-- Skill Graph **********************************************************************************************************-->
+
 <div class="w3-padding-32">
   <div class="w3-black w3-round w3-card-2 w3-justify" style="max-width: 100%">
   <div class="w3-padding-16" style="padding-left: 20px">
@@ -300,178 +308,219 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 </div>
 
 
-<div class="w3-padding-32">
+
+
+<!-- Grid for Projects **************************************************************************************************-->
+
+<div class="w3-padding-32" id="#projects">
   <!-- Research Projects Section -->
-  <div class="w3-card-2 w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
+  <div class="w3-card w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
     <h2>Research Projects</h2><br>
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
     <div class="w3-round" id="research_projects">
-      <div class="w3-justify w3-content w3-padding-16 w3-card-2 w3-black">
-          <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/oh6r9id3463ol81/emoji%20cloud.png?raw=1">
-        <div class="w3-container">
+      <div class="w3-justify w3-content w3-padding-16  w3-center">
+      <div class="w3-card-2" style="border:1px solid #c1c1c1">
+          <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb"><img class="object-fit_fill projects" style="margin-top: 20px" src="https://turi.com/images/turi-logo-withtagline.svg">
+          
+        <div class="w3-justify w3-container" style="border:1px solid #c1c1c1">
             <h4><b>Movie Recommendation Engine</b></h4>
           </a>
               <a target="_blank" href="https://turi.com/"><p>Written in Python using Graphlab</p>
               </a>
+              </div>
+              </div>
         </div>
         </div>
-      </div>
+
  <hr>
 
     <div class="w3-round" id="research_projects">
-      <div class="w3-justify w3-content w3-padding-16 w3-card-2">
+      <div class="w3-justify w3-content w3-padding-16  w3-center">
+      <div class="w3-card-2" style="border:1px solid #c1c1c1;">
       <a target="_blank" href="https://github.com/majickdave/graphlab_movies/blob/master/Lab%203_movielens_final.ipynb">
-        <img class="object-fit_cover projects" src="https://dl.dropboxusercontent.com/s/87atc5an6yji8az/emoji%20cloud.png?raw=1"> 
-        <div class="w3-container">
+        <img class="object-fit_fill projects" src="http://scikit-learn.org/stable/_images/scikit-learn-logo-notext.png"> 
+
+        <div class="w3-justify w3-container" style="border:1px solid #c1c1c1;">
             <h4><b>Handwritten Digits image data classification.</b></h4>
       </a>
               <a target="_blank" href="http://scikit-learn.org/stable/"><i><p>Written in Python using ML models developed in Pylab, Matlab, SciKit-Learn.</p></i>
               </a>
+              </div>
+              </div>
         </div>
-
-    </div>
-    </div><hr>
+        </div>
+  <hr>
 
 <div class="w3-round" id="research_projects">
-    <div class="w3-justify w3-content w3-padding-16 w3-card-2 w3-black">
+    <div class="w3-justify w3-content w3-padding-16  w3-center">
+    <div class="w3-card-2" style="border:1px solid #c1c1c1;">
       <a target="_blank" href="http://p5-emoji.herokuapp.com/index.html"> 
-        <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1">     
-          <div class="w3-container">
+        <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1"> 
+
+          <div class="w3-justify w3-container" style="border:1px solid #c1c1c1;">
             <h4><b>Mockup of Music to Emoji Translation</b></h4>
       </a>
               <a target="_blank" href="https://p5js.org/"><i><p>Written in Javascript using p5.js</p></i>
               </a>
-          </div>
-    </div>
-    </div><hr>
+              </div>
+              </div>
+        </div>
+        </div>
+  <hr>
 <div class="w3-round" id="research_projects">
-    <div class="w3-justify w3-content w3-padding-16 w3-card-2">
-      <a href="https://github.com/majickdave/Quantifying-Case6/blob/master/Case%20Study%20Unit%206.ipynb">
-          <img class="w3-rectangle object-fit_scale-down projects" src="https://dl.dropboxusercontent.com/s/4rkp246zqvho15j/emoji%20cloud.png?raw=1">
+    <div class="w3-justify w3-content w3-padding-16  w3-center">
+    <div class="w3-card-2" style="border:1px solid #c1c1c1;">
+      <a target="_blank" href="https://github.com/majickdave/Quantifying-Case6/blob/master/Case%20Study%20Unit%206.ipynb">
+          <img class="w3-rectangle object-fit_scale-down projects" src="https://www.dataiku.com/static/img/learn/guide/getting-started/getting-started-with-python/logo-stack-python.png">
 
-        <div class="w3-container">
-            <h4><b>Real-Time Location Study using WiFi</b></h4>
+        <div class="w3-justify w3-white w3-container" style="border:1px solid #c1c1c1;">
+            <h4><b>Real-Time Location Study using WiFi Signal Strength</b></h4>
       </a>
               <i><p>Written in Python</p></i>
+              </div>
+              </div>
         </div>
-
-    </div>
+        </div>
+  <br>
 </div>
-</div><br>
 
-  <!-- Grid for Projects -->
+
+
+
+<!-- Grid for Apps **************************************************************************************************-->
+
 <div class="w3-padding-32">
   <!-- Research Projects Section -->
-  <div class="w3-card-2 w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
+  <div class="w3-card w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;" id="research_projects">
     <h2>Camera and Data Visualization</h2><br>
-    
+
+    <div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
+
          <a href="https://github.com/MusicMind/MusicMind-iOS">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:50%; max-width:100%"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height: 300px; max-width:100%; margin: 20px;"  src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
           </img>
          
-          <div class="w3-container">
+          <div class="w3-justify w3-white w3-container"> 
               <h4><b>MusicMind iOS - Shoot videos with your music</b></h4>
           </a>
               <a target="_blank" href="https://developer.spotify.com/web-api/"> <i><p>Written in Swift using Spotify Web API</p></i>
           </a>
-          </div><hr>
+              </div>
+              </div><br>
+    <hr>
+    <div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
 
-
-    <div  style="margin-top: 40px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge">
-        <a href="https://github.com/majickdave/Viz_Sketch5">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:50%; max-width:100%" src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
+         <a href="https://github.com/MusicMind/MusicMind-iOS">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height: 300px; max-width:100%; margin: 20px;"  src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
           </img>
           
-          <div class="w3-container">
+          <div class="w3-justify w3-white w3-container"> 
               <h4><b>iOS live video pixel range inversion and texture map to 3D spheres</b></h4>
           </a>
-              <a href="http://openframeworks.cc/setup/iphone"> <i><p>Written in C# using OpenFrameWorks for iOS</p></i></a>
+              <a target="_blank" href="http://openframeworks.cc/setup/iphone"> <i><p>Written in C# using OpenFrameWorks for iOS</p></i></a>
           </div>
-        </div><hr>
+        </div><br>
+        <hr>
 
-    <div  style="margin-top: 40px; margin-bottom: 40px; padding: 30px" class="w3-round-xxlarge">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:50%; max-width:100%" src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
+    <div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
+
+         <a target="_blank" href="https://github.com/MusicMind/MusicMind-iOS">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height: 300px; max-width:100%; margin: 20px;"   src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
           </img>
           <a href="https://github.com/majickdave/Viz2_4">
-          <div class="w3-container">
+          <div class="w3-justify w3-white w3-container"> 
               <h4><b>Live Video texture Mapping.</b></h4>
           </a>
               <a href="http://openframeworks.cc/setup/xcode"> <i><p>Written in C++ using OpenFrameWorks for osx</p></i></a>
           </div>
-        </div><hr>
+        </div><br>
+        <hr>
 
-    <div  style="margin-top: 40px; margin-bottom: 10px; padding: 30px" class="w3-round-xxlarge"><a href="https://github.com/majickdave/swift-ascii-art">
-          <img class="w3-card-4 w3-round-xxlarge" style="max-height:50%; max-width:100%" src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
+<div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
+
+         <a target="_blank" href="https://github.com/MusicMind/MusicMind-iOS">
+          <img class="w3-card-4 w3-round-xxlarge" style="max-height: 300px; max-width:100%; margin: 20px;"   src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
           </img>
          
-          <div class="w3-container">
+          <div class="w3-justify w3-white w3-container">
               <h4><b>ASCII art for iPhone</b></h4>
           </a>
             <i><p>Written in Swift</p></i>
 
           </div>
-        </div>
+        </div><br>
     </div>
 
 
   </div>
-<div class="w3-card-2 w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
-  <h2 class="w3-white" id="research_projects">Research Papers</h2>
-  <div class="w3-content w3-justify">
-    <!-- Grid for Papers -->
-<!--     <div class="w3-black w3-center w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
-        <div style="margin-bottom: 30px" class="w3-card-4">
-        <div class="w3-padding-16 w3-content">
+
+
+
+
+  <!-- Grid for Papers **************************************************************************************************-->
+
+<div class="w3-padding-32" id="#research">
+<div class="w3-card w3-white w3-round w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
+  <h2>Research Papers</h2><br>
+    <div class="w3-padding-16 w3-content w3-card-2"  style="border:1px solid #c1c1c1;">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCORHV6T1FrSXY5WHM&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view">
-          <div class="w3-container w3-justify">
+          </div>
+          <div class="w3-justify w3-container">
+
               <h4><b>Blockchain Research: Bitcoin, Ethereum, and Beyond.</b></h4>
           </a>
               <i><p>Written in 2016 for Network Security at SMU</p></i>
-          </div>  
-        </div>
-    </div><hr>
+              </div>
 
-    <div class="w3-padding-16 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+
+  <hr>
+
+  <div class="w3-padding-16 w3-content w3-card-2"  style="border:1px solid #c1c1c1;">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOdXk3ei10WkNiNjQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOdXk3ei10WkNiNjQ/view">
-          <div class="w3-container">
+          </div>
+          <div class="w3-justify w3-container">
+
               <h4><b>Facial Image Emotional Analysis</b></h4>
           </a>
               <i><p>Written in 2016 for Data Science Capstone Course at SMU</p></i>
-          </div>
-        </div>
-    </div><hr>
-    <div class="w3-padding-16 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+              </div>
+
+
+  <hr>
+
+  <div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOX2s3ZFZoUG9lVnc&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
-          <div class="w3-container">
+          </div>
+          <div class="w3-justify w3-container">
+
               <h4><b>Natural Language Processing in Twitter data</b></h4>
           </a>
               <i><p>Written in 2016 for Database Management at SMU</p></i>
-          </div>
-        </div>
-    </div><hr>
-    <div class="w3-padding-16 w3-content">
-        <div style="margin-bottom: 30px" class="w3-card-4">
+              </div>
+
+  <hr>
+
+  <div class="w3-padding-16 w3-content w3-center w3-card-2"  style="border:1px solid #c1c1c1;">
           <iframe class="iframe" src="https://docs.google.com/viewer?srcid=0B1NVR7hT8qCOSUFuRnI3ZEJHVlk&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe>
-          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOSUFuRnI3ZEJHVlk/view">
-          <div class="w3-container">
+          <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
+          </div>
+          <div class="w3-justify w3-container">
               <h4><b>Multivariate Analysis of Wikipedia Perceptions</b></h4>
           </a>
               <i><p>Written in 2016 for Experimental Statistics at SMU</p></i>
           </div>
-        </div>
-    </div>
-  </div>
- 
-  <!-- Contact Section -->
- <!-- Footer -->
-</div>
-</div>
- <div class="w3-center w3-container w3-opacity" id="contact">
+          
+</div><br>
+
+
+
+
+ <!-- Footer ******************************************************************************************************************-->
+  <div class="" id="#research">
+ <div class="w3-padding-16 w3-center w3-container w3-opacity" id="#contact">
 
 
 <footer class="footer web w3-content w3-xxlarge">
