@@ -250,37 +250,49 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
   
     <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
-    <div class="w3-round">
-      <div class="w3-cyan w3-round python" style="height:28px;width:95%"></div>
-    </div>
+    <button class="w3-round-xxlarge w3-cyan python" onmouseover="move('myPython', 95)" style="height:28px;width:95%" id="myPython">
+    </button>
+
     <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
       Javascript</p>
-    <div class="w3-round">
-      <div class="w3-green javascript w3-round" style="height:28px;width:90%"></div>
-    </div>
+    <button class="w3-round-xxlarge w3-green javascript" onmouseover="move('myJs', 90)" style="height:28px;width:90%" id="myJs">
+    </button>
     <p class="w3-wide w3-text-yellow"><i class="devicon-swift-plain"></i>
       Swift</p>
-    <div class="w3-round">
-      <div class="w3-yellow swift w3-round" style="height:28px;width:85%"></div>
-    </div>
+    <button class="w3-round-xxlarge w3-yellow swift" onmouseover="move('mySwift', 85)" style="height:28px;width:85%" id="mySwift">
+    </button>
     <p class="w3-wide w3-text-orange"><i class="devicon-java-plain"></i>
       Java</p>
-    <div class="w3-round">
-      <div class="w3-orange java w3-round" style="height:28px;width:80%"></div>
-    </div>
+    <button class="w3-round-xxlarge w3-orange java" onmouseover="move('myJava', 80)" style="height:28px;width:80%" id="myJava">
+    </button>
     <p class="w3-wide w3-text-red"><i class="devicon-ruby-plain"></i>
       Ruby</p>
-    <div class="w3-round">
-      <div class="w3-red ruby w3-round" style="height:28px;width:70%"></div>
-    </div>
+    <button class="w3-round-xxlarge w3-red java" onmouseover="move('myRuby', 70)" style="height:28px;width:70%" id="myRuby">
+    </button>
+
     <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
       C++</p>
-    <div class="w3-round">
-      <div class="w3-pink cpp w3-round" style="height:28px;width:65%"></div><br>
-    </div>
-<!--     </div> -->
+    <button class="w3-round-xxlarge w3-pink cpp" onmouseover="move('myCpp', 65)" style="height:28px;width:65%" id="myCpp">
+    </button>
+    <div class="w3-padding-16">
   </div>
 </div>
+
+<script>
+function move(element, w) {
+  var elem = document.getElementById(element);   
+  var width = 1;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (width >= w) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+</script>
 
 <!--     References -->
 <div class="w3-padding-32" id="references">
