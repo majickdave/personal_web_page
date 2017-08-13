@@ -152,24 +152,19 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    #main {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        position: relative;
-        left: -1px;
-
-    }
+    #main .center {
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+  }
 }
 
 @media screen and (min-width: 601px) {
-    #main {
-        width: 50%;
-        padding-top: 50px;
-        padding-right: 30px;
-        padding-bottom: 50px;
-        padding-left: 80px;
-    }
+    #main .center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
 }
 
 body.homepage #navigation-top {
@@ -243,7 +238,7 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 <!-- Begin Bio **********************************************************************************************************-->
 <div class="w3-padding-16"></div>
-<div class="w3-padding-large  w3-animate-opacity w3-center hide-bars-on-scroll" id="main" >
+<div class="w3-animate-opacity w3-center hide-bars-on-scroll" id="main" >
   <!-- Header/Home -->
   <div class="w3-card w3-white w3-round w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%">
   <header class="w3-container" id="home">
