@@ -161,7 +161,7 @@ a {
 
 @media screen and (min-width: 601px) {
     #main .center {
-    margin: auto;
+    margin: 100px;
     width: 60%;
     padding: 10px;
   }
@@ -238,9 +238,9 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 <!-- Begin Bio **********************************************************************************************************-->
 <div class="w3-padding-16"></div>
-<div class="w3-animate-opacity w3-center hide-bars-on-scroll" id="main" >
+<div class="w3-animate-opacity" id="main" >
   <!-- Header/Home -->
-  <div class="w3-card w3-white w3-round w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%">
+  <div class="w3-content w3-card w3-white w3-round w3-padding-large w3-center" style="border:1px solid #c1c1c1; margin: auto">
   <header class="w3-container" id="home">
     <img style="border:4px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1><span>David Samuel</span></h1>
@@ -263,36 +263,36 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 <!-- Skill Graph **********************************************************************************************************-->
 
 <div class="w3-padding-32">
-  <div class="w3-black w3-padding-large w3-round w3-card w3-justify" style="max-width: 100%; max-height: 50%">
+  <div class="w3-content w3-card w3-black w3-round w3-padding-large w3-justify" style="border:1px solid #c1c1c1; margin: auto">
 <!--   <div style="padding-left: 20px"> -->
   <h2>Programming Languages</h2><br>
   
     <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
       Python</p>
-    <button class="w3-round-xxlarge w3-cyan python" onclick="move('myPython', 95)" style="height:28px;width:95%" id="myPython">
-    </button>
+    <h1 class="w3-round-xxlarge w3-cyan python" onclick="move('myPython', 95)" style="height:28px;width:95%" id="myPython">
+    </h1>
 
     <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
       Javascript</p>
-    <button class="w3-round-xxlarge w3-green javascript" onclick="move('myJs', 90)" style="height:28px;width:90%" id="myJs">
-    </button>
+    <h1 class="w3-round-xxlarge w3-green javascript" onclick="move('myJs', 90)" style="height:28px;width:90%" id="myJs">
+    </h1>
     <p class="w3-wide w3-text-yellow"><i class="devicon-swift-plain"></i>
       Swift</p>
-    <button class="w3-round-xxlarge w3-yellow swift" onclick="move('mySwift', 85)" style="height:28px;width:85%" id="mySwift">
-    </button>
+    <h1 class="w3-round-xxlarge w3-yellow swift" onclick="move('mySwift', 85)" style="height:28px;width:85%" id="mySwift">
+    </h1>
     <p class="w3-wide w3-text-orange"><i class="devicon-java-plain"></i>
       Java</p>
-    <button class="w3-round-xxlarge w3-orange java" onclick="move('myJava', 80)" style="height:28px;width:80%" id="myJava">
-    </button>
+    <h1 class="w3-round-xxlarge w3-orange java" onclick="move('myJava', 80)" style="height:28px;width:80%" id="myJava">
+    </h1>
     <p class="w3-wide w3-text-red"><i class="devicon-ruby-plain"></i>
       Ruby</p>
-    <button class="w3-round-xxlarge w3-red java" onclick="move('myRuby', 70)" style="height:28px;width:70%" id="myRuby">
-    </button>
+    <h1 class="w3-round-xxlarge w3-red java" onclick="move('myRuby', 70)" style="height:28px;width:70%" id="myRuby">
+    </h1>
 
     <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
       C++</p>
-    <button class="w3-round-xxlarge w3-pink cpp" onclick="move('myCpp', 65)" style="height:28px;width:65%" id="myCpp">
-    </button>
+    <h1 class="w3-round-xxlarge w3-pink cpp" onclick="move('myCpp', 65)" style="height:28px;width:65%" id="myCpp">
+    </h1>
     <div class="w3-padding-16">
   </div>
 </div>
@@ -315,7 +315,7 @@ function move(element, w) {
 
 <!--     References -->
 <div class="w3-padding-32" id="references">
-<div class="w3-padding-large w3-card-2 w3-round w3-black" style="max-width: 100%">
+<div class="w3-content w3-card w3-black w3-round w3-padding-large" style="border:1px solid #c1c1c1; margin: auto">
  
     <div class="w3-round  w3-justify">
       <h2>References</h2><br>
@@ -344,15 +344,15 @@ function move(element, w) {
 
 <div class="w3-padding-32" id="projects">
   <!-- Research Projects Section -->
-  <div class="w3-card w3-white w3-round w3-justify w3-padding-large" style="border:1px solid #c1c1c1; max-width: 100%;">
+  <div class="w3-content w3-card w3-white w3-round w3-padding-large" style="border:1px solid #c1c1c1; margin: auto">
     <h2>Research Projects</h2><br>
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
     <div id="research_projects">
-      <div class=" w3-content w3-round w3-padding-16  w3-center">
-      <div class="w3-card-2 w3-round" style="border:1px solid #c1c1c1">
-          <a target="_blank" href="https://github.com/majickdave/graphlab_movies"><img class="object-fit_cover projects" style="margin-top: 20px" src="https://turi.com/images/turi-logo-withtagline.svg">
+      <div class="w3-center" style="margin: auto">
+      <div class="w3-card-2 " style="border:1px solid #c1c1c1">
+          <a target="_blank" href="https://github.com/majickdave/graphlab_movies"><img class="object-fit_fill projects" src="https://turi.com/images/turi-logo-withtagline.svg">
           
-        <div class="w3-justify w3-container" style="border-top:1px solid #c1c1c1">
+        <div class="w3-container" style="margin: auto; border-top:1px solid #c1c1c1">
             <h4><b>Movie Recommendation Engine</b></h4>
           </a>
               <a target="_blank" href="https://turi.com/"><p>Written in Python using Graphlab</p>
@@ -365,7 +365,7 @@ function move(element, w) {
  <hr>
 
     <div class="w3-round" id="research_projects">
-      <div class="w3-justify w3-content w3-padding-16  w3-center">
+      <div class="w3-content w3-center">
       <div class="w3-card-2" style="border:1px solid #c1c1c1;">
       <a target="_blank" href="https://github.com/majickdave/NIST_digits">
         <img class="object-fit_cover projects" src="http://scikit-learn.org/stable/_images/scikit-learn-logo-notext.png"> 
