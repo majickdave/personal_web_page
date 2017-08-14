@@ -94,11 +94,16 @@ video {
   filter:drop-shadow(1px 1px 10px white);
 }
 
+body {
+  background-color: #f2f2f2
+}
+
 iframe {
   width: 100%;
   height: 400px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: gray;
   
 /*  margin-top: 40px;*/
 /*  padding: 40px;
@@ -169,7 +174,7 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 800px) {#main {margin-left: 0}}
 </style>
-<body  style="background-color: #f2f2f2">
+<body>
 
 
 
@@ -227,10 +232,10 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 <!-- Begin Bio **********************************************************************************************************-->
 <div class="w3-padding-16"></div>
-<div class="w3-animate-opacity" id="main" >
+<div  id="main" >
   <!-- Header/Home -->
-  <div class="w3-content w3-card w3-white w3-round w3-padding-large w3-center" style="border:1px solid #c1c1c1; margin: auto">
-  <header class="w3-container" id="home">
+  <div class="w3-animate-opacity w3-content w3-card w3-white w3-round w3-padding-large w3-center" style="border:1px solid #c1c1c1; margin: auto">
+  <header class="w3-container" id="home"><br>
     <img style="border:4px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1><span>David Samuel</span></h1>
     <h3>Founder of MusicMind</h3><br>
@@ -329,14 +334,14 @@ function move(element, w) {
 
 <!-- Grid for Projects **************************************************************************************************-->
 
-<div class="w3-padding-16" id="projects">
+<div class="w3-padding-large" id="projects">
   <!-- Research Projects Section -->
   <div class="w3-content w3-card w3-white">
 
-    <h2 style="padding-left: 30px">Research Projects</h2><hr>
+    <h2 style="padding-left: 30px">Research Projects</h2><br>
 <!--     <div class="w3-center w3-black w3-round-xxlarge w3-row-padding w3-card-4" style="padding:20px"> -->
 
-      <div class="w3-card-2">
+      <div class="w3-card-2" style="border-bottom:1px solid #c1c1c1;border-top:1px solid #c1c1c1">
           <a target="_blank" href="https://github.com/majickdave/graphlab_movies">
           <img class="object-fit_cover" style="width: 100%; max-height: 200px" src="https://turi.com/images/turi-logo-withtagline.svg">
           
@@ -346,9 +351,9 @@ function move(element, w) {
               <p><i>Written in Python using Graphlab</i></p>
               </div>
               </div>
-  <hr>
+  <br>
 
-    <div class="w3-card-2">
+    <div class="w3-card-2" style="border-bottom:1px solid #c1c1c1;border-top:1px solid #c1c1c1">
       <a target="_blank" href="https://github.com/majickdave/NIST_digits">
         <img class="object-fit_cover" style="width: 100%; max-height: 200px"  src="https://lh3.googleusercontent.com/N_Nk4NMg4L3_1o8bj1eZR53rigiJXXkt34APyPBqb_gU3WmpCCyG5ArT69qkC80wNtuSHyUImM6R5fVpm_jWjSORekbJJkA=s688"> 
 
@@ -358,9 +363,9 @@ function move(element, w) {
               <p><i>Written in Python</i></p>
               </div>
               </div>
-  <hr>
+  <br>
 
-  <div class="w3-card-2">
+  <div class="w3-card-2" style="border-bottom:1px solid #c1c1c1;border-top:1px solid #c1c1c1">
       <a target="_blank" href="https://agile-inlet-16146.herokuapp.com/"> 
         <img class="object-fit_cover" style="width: 100%; max-height: 200px" src="https://dl.dropboxusercontent.com/s/qmrry8nno8jswn9/emoji%20cloud.png?raw=1"> 
 
@@ -371,9 +376,9 @@ function move(element, w) {
               
               </div>
               </div>
-  <hr>
+  <br>
 
-    <div class="w3-card-2">
+    <div class="w3-card-2" style="border-bottom:1px solid #c1c1c1;border-top:1px solid #c1c1c1">
       <a target="_blank" href="https://github.com/majickdave/Quantifying-Case6">
           <img class="object-fit_cover" style="width: 100%; max-height: 200px" src="https://www.dataiku.com/static/img/learn/guide/getting-started/getting-started-with-python/logo-stack-python.png">
 
@@ -390,29 +395,29 @@ function move(element, w) {
 
 <!-- Grid for Apps **************************************************************************************************-->
 
-<div class="w3-padding-16">
+<div class="w3-padding-large">
   <!-- Research Projects Section -->
-  <div class="w3-content w3-card w3-white" style="border:1px solid #c1c1c1">
-    <h2 style="padding-left: 30px">Image Data Visualization</h2><hr>
+  <div class="w3-content w3-card w3-white">
+    <h2 style="padding-left: 30px">Image Data Visualization</h2><br>
 
 <!--         begin Projects -->
-        <div class="w3-card-2" >
+        <div class="w3-card-2">
          <a href="https://github.com/MusicMind/MusicMind-iOS">
           <img class="object-fit_cover" style="width: 100%; max-height: 400px" src="https://dl.dropboxusercontent.com/s/fcf7bzcw5ltdf23/Picture3.png?raw=1">
 
 
-          <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1;">
+          <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1">
               <h4 class=""><b>MusicMind iOS: Shoot Videos with Spotify</b></h4>
           </a>
               <p><i>Written in Swift</i></p>
 
               </div>
-              </div><hr>
+              </div><br>
               
     
 
         <div class="w3-card-2">
-         <a href="https://github.com/MusicMind/MusicMind-iOS">
+         <a href="https://github.com/majickdave/Viz_Sketch5">
           <img class="object-fit_cover" style="width: 100%; max-height: 400px" src="https://dl.dropboxusercontent.com/s/of2chnmkqilhdqq/Picture1.png?raw=1">
 
           
@@ -421,11 +426,11 @@ function move(element, w) {
           </a>
               <p><i>Written in C#</i></p>
               </div>
-              </div><hr>
+              </div><br>
 
 
         <div class="w3-card-2">
-         <a target="_blank" href="https://github.com/MusicMind/MusicMind-iOS">
+         <a target="_blank" href="https://github.com/majickdave/Viz2_4">
           <img class="object-fit_cover" style="width: 100%; max-height: 400px"   src="https://dl.dropboxusercontent.com/s/wbmrufyognxa3mc/Picture4.png?raw=1">
 
           <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1;">  
@@ -433,11 +438,11 @@ function move(element, w) {
           </a>
               <p><i>Written in C++ using OpenFrameWorks for osx</i></p>
           </div>
-          </div><hr>
+          </div><br>
 
 
       <div class="w3-card-2">
-         <a target="_blank" href="https://github.com/majickdave/NIST_digits">
+         <a target="_blank" href="https://github.com/majickdave/swift-ascii-art">
           <img class="object-fit_cover" style="width: 100%; max-height: 400px"   src="https://dl.dropboxusercontent.com/s/8h2o119aagzvqhx/Picture2.png?raw=1">
           </img>
          
