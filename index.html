@@ -40,12 +40,12 @@ video {
 }
 
 .python {
-  filter:drop-shadow(8px 1px 8px cyan);
+  filter:drop-shadow(8px 1px 8px #50f9fc);
 
 }
 
 .javascript {
-  filter:drop-shadow(8px 1px 8px #00ff99);
+  filter:drop-shadow(8px 1px 8px #50f442);
 
 }
 
@@ -55,17 +55,17 @@ video {
 }
 
 .java {
-  filter:drop-shadow(8px 1px 8px #ff6666);
+  filter:drop-shadow(8px 1px 8px #ff8a23);
 
 }
 
 .ruby {
-  filter:drop-shadow(8px 1px 8px #ff0000);
+  filter:drop-shadow(8px 1px 8px #ff4242);
 
 }
 
 .cpp {
-  filter:drop-shadow(8px 1px 8px fuchsia);
+  filter:drop-shadow(8px 1px 8px #ff87f9);
 
 }
 
@@ -153,21 +153,21 @@ iframe {
     padding: 10px;
   }
 }
-
+/*
 body.homepage #navigation-top {
    display: none !important;
- }
+ }*/
 
 body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 10px white)}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-@media only screen and (min-width: 601px) {#main {max-height: 300px;}}
+/*@media only screen and (min-width: 601px) {#main {max-height: 300px;}}*/
 
-@media only screen and (min-width: 1024px) {#main {margin-left: 120px; margin-right: 120px;}}
+@media only screen and (min-width: 801px) {#main {margin-left: 120px; margin-right: 120px;}}
 /* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 800px) {#main {margin-left: 0}}
 </style>
 <body  style="background-color: #f2f2f2">
 
@@ -254,37 +254,36 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 <div class="w3-padding-16">
   <div class="w3-content w3-card w3-black w3-padding-large w3-justify" style=" max-height: 60%; margin: auto">
 <!--   <div style="padding-left: 20px"> -->
-  <h2>Programming Languages</h2><br>
+  <h2>Programming Languages</h2>
   
-    <p class="w3-wide w3-text-cyan "><i class="devicon-python-plain"></i>
+    <p class="w3-wide" style="color:#50f9fc;"><b><i class="devicon-python-plain"></i>
       Python</p>
-    <h1 class="w3-round-xxlarge w3-cyan python" onclick="move('myPython', 95)" style="height:28px;width:95%" id="myPython">
-    </h1>
+    <h3 class="w3-round-xxlarge python" onclick="move('myPython', 95)" style="background-color:#50f9fc; height:28px;width:95%" id="myPython">
+    </h3>
 
-    <p class="w3-wide w3-text-green"><i class="devicon-javascript-plain"></i>
+    <p class="w3-wide" style="color:#50f442;"><i class="devicon-javascript-plain"></i>
       Javascript</p>
-    <h1 class="w3-round-xxlarge w3-green javascript" onclick="move('myJs', 90)" style="height:28px;width:90%" id="myJs">
+    <h1 class="w3-round-xxlarge javascript" onclick="move('myJs', 90)" style="background-color: #50f442;height:28px;width:90%" id="myJs">
     </h1>
-    <p class="w3-wide w3-text-yellow"><i class="devicon-swift-plain"></i>
+    <p class="w3-wide " style="color:#edfc50"><i class="devicon-swift-plain"></i>
       Swift</p>
-    <h1 class="w3-round-xxlarge w3-yellow swift" onclick="move('mySwift', 85)" style="height:28px;width:85%" id="mySwift">
+    <h1 class="w3-round-xxlarge swift" onclick="move('mySwift', 85)" style="background-color:#edfc50; height:28px;width:85%" id="mySwift">
     </h1>
-    <p class="w3-wide w3-text-orange"><i class="devicon-java-plain"></i>
+    <p class="w3-wide" style="color: #ff8a23"><i class="devicon-java-plain"></i>
       Java</p>
-    <h1 class="w3-round-xxlarge w3-orange java" onclick="move('myJava', 80)" style="height:28px;width:80%" id="myJava">
+    <h1 class="w3-round-xxlarge java" onclick="move('myJava', 80)" style="background-color:#ff8a23;height:28px;width:80%" id="myJava">
     </h1>
-    <p class="w3-wide w3-text-red"><i class="devicon-ruby-plain"></i>
+    <p class="w3-wide" style="color: #ff4242"><i class="devicon-ruby-plain"></i>
       Ruby</p>
-    <h1 class="w3-round-xxlarge w3-red java" onclick="move('myRuby', 70)" style="height:28px;width:70%" id="myRuby">
+    <h1 class="w3-round-xxlarge ruby" onclick="move('myRuby', 70)" style="background-color:#ff4242;height:28px;width:70%" id="myRuby">
     </h1>
 
-    <p class="w3-wide w3-text-pink"><i class="devicon-cplusplus-plain"></i>
-      C++</p>
-    <h1 class="w3-round-xxlarge w3-pink cpp" onclick="move('myCpp', 65)" style="height:28px;width:65%" id="myCpp">
-    </h1>
-    <div class="w3-padding-16">
-  </div>
-</div>
+    <p class="w3-wide" style="color: #ff87f9"><i class="devicon-cplusplus-plain"></i>
+      C++</p></b>
+    <h1 class="w3-round-xxlarge cpp" onclick="move('myCpp', 65)" style="background-color:#ff87f9;height:28px;width:65%" id="myCpp">
+    </h1><br>
+  </div><br>
+
 
 <script>
 function move(element, w) {
@@ -303,31 +302,30 @@ function move(element, w) {
 </script>
 
 <!--     References -->
-<div class="w3-padding-16" id="references">
+<!-- <div class="w3-padding-16" id="references"> -->
 <div class="w3-content w3-card w3-black w3-padding-large" style="margin: auto">
- 
-    <div class="w3-round  w3-justify">
-      <h2>References</h2><br>
-
+ <h2>References</h2><br>
+    <div class="w3-container w3-content">
+      <img style="border:2px solid #00ff99;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right">
       
-      <img style="border:2px solid #00ff99; max-width: 64px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/07a/0d1/1cc6ee8.jpg" alt="engels" class="avatar w3-left w3-circle w3-margin-right"><a href="https://www.linkedin.com/in/danielwengels/">
+      <a href="https://www.linkedin.com/in/danielwengels/">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels.</a>
       </span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
       <i><p>Dr. Engels was my most influential mentor at SMU.</p></i><br>
-      </div>
-<div class="w3-round w3-card-2 w3-justify">
+    </div>
+    
+    <div class="w3-container w3-content">
+      <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right">
       
-      <img style="border:2px solid #00ff99" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/090/3d6/325d293.jpg" alt="holt" class="avatar w3-left w3-circle w3-margin-right"><a href="https://www.linkedin.com/in/ginger-holt-7461161/">
+      <a href="https://www.linkedin.com/in/ginger-holt-7461161/">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt.</a>
       </span>Manager, Data Science at Facebook.</p>
       <i><p>Dr. Holt taught my capstone class in Data Science.</p></i><br>
-  </div>
+    </div>
 
-  <!-- End About Section -->
+  <!-- End References-->
 </div>
-
-
-</div>
+<!-- </div> -->
 
 <!-- Grid for Projects **************************************************************************************************-->
 
