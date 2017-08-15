@@ -162,9 +162,10 @@ iframe {
 body.homepage #navigation-top {
    display: none !important;
  }*/
-
-
-p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 10px white)}
+<textarea id="h1" data-family="Montserrat" data-variant="700" style="font-size: 5.1em; height: 192px;">Font pairing made simple</textarea>
+h1 {filter: drop-shadow(1px 1px 10px white)}
+h2,h3,h4,h5,h6 {font-family: "Montserrat"; }
+p, {font-family: "Hind Madurai";}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -247,7 +248,7 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
   <div class="w3-content w3-justify" id="about">
     <h2>Prologue</h2>
     <hr>
-    <p>
+    <p class="w3-opacity">
       My entire adult life, I have been surrounded by applications. I began scouring the early web, and building websites when I was around 12. Fast-forward a decade, I graduated from the University of Massachusetts, Amherst with a Bachelor's Degree in Civil Engineering. I began studying computer science as hobby in the years after college, and enrolled in several online courses offered through MIT and UC-Berkeley, before being accepted as a student at Southern Methodist University. While studying at SMU, I forged a deep connection to graphics processing and machine learning, and my love for music production fused with an interest in data visualization; and I began building MusicMind, an Augmented Reality Platform for creating, and sharing unique audio-visual music experiences. I strive to build powerful, engaging software, and I am driven by my curiosity in fostering pervasive multimedia experiences.
     </p>
 </div>
@@ -263,7 +264,7 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
 
   <h2 class="w3-animate-fading">Programming Languages</h2><br>
     
-    <p1 class="w3-wide" style="color:#50f9fc; font-family: Helvetica Neue">Python<p2 class="devicon-python-plain"></p2></p1>
+    <p class="w3-wide" style="color:#50f9fc; font-family: Helvetica Neue">Python<p2 class="devicon-python-plain"></p2></p>
     <h1 class="w3-round-xxlarge python" style="fill:none; background-color:#50f9fc; height:10px; width:0%" id="myPython">
     </h1>
     
@@ -337,7 +338,7 @@ function animateCells() {
       <a href="https://www.linkedin.com/in/danielwengels/">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Daniel Engels.</a>
       </span>Director, Master of Science in Data Science program at Southern Methodist University.</p>
-      <i><p>Dr. Engels was my most influential mentor at SMU.</p></i><br>
+      <p>Dr. Engels was my most influential mentor at SMU.</p><br>
     </div>
     
     <div class="w3-container w3-content w3-margin-right">
@@ -346,7 +347,7 @@ function animateCells() {
       <a href="https://www.linkedin.com/in/ginger-holt-7461161/">
       <p><span class="fa fa-check-circle w3-large w3-margin-right" style="color: #00ff99"> Ginger Holt.</a>
       </span>Manager, Data Science at Facebook.</p>
-      <i><p>Dr. Holt taught my capstone class in Data Science.</p></i><br>
+      <p>Dr. Holt taught my capstone class in Data Science.</p><br>
     </div>
 
   <!-- End References-->
@@ -369,7 +370,7 @@ function animateCells() {
         <div class="w3-content w3-container" style="border-top:1px solid #c1c1c1" style="border-bottom:1px solid #c1c1c1">
             <h4><b>Movie Recommendation Engine</b></h4>
           </a>
-              <p><i>Written in Python using Graphlab</i></p>
+              <p>Written in Python using Graphlab</p>
               </div>
               </div>
   <br>
@@ -381,7 +382,7 @@ function animateCells() {
         <div class="w3-content w3-container" style="border-top:1px solid #c1c1c1" style="border-bottom:1px solid #c1c1c1">
             <h4><b>Computer Vision</b></h4>
       </a>
-              <p><i>Written in Python</i></p>
+              <p>Written in Python</p>
               </div>
               </div>
   <br>
@@ -393,7 +394,7 @@ function animateCells() {
           <div class="w3-content w3-container" style="border-top:1px solid #c1c1c1" style="border-bottom:1px solid #c1c1c1">
             <h4><b>Mockup of Music to Emoji Translation</b></h4>
       </a>
-              <a target="_blank" href="https://github.com/majickdave/P5.js"><p><i>Written in Javascript using p5.js</i></p></a>
+              <a target="_blank" href="https://github.com/majickdave/P5.js"><p>Written in Javascript using p5.js</p></a>
               
               </div>
               </div>
@@ -406,7 +407,7 @@ function animateCells() {
         <div class="w3-content w3-container" style="border-top:1px solid #c1c1c1" style="border-bottom:1px solid #c1c1c1">
             <h4><b>Real-Time Location Study using WiFi Signal Strength</b></h4>
       </a>
-              <i><p>Written in Python</p></i>
+              <p>Written in Python</p>
               </div>
               </div>
 </div><br>
@@ -429,7 +430,7 @@ function animateCells() {
           <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1">
               <h4 class=""><b>MusicMind iOS: Shoot Videos with Spotify</b></h4>
           </a>
-              <p><i>Written in Swift</i></p>
+              <p>Written in Swift</p>
 
               </div>
               </div><br>
@@ -444,7 +445,7 @@ function animateCells() {
           <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1;">
               <h4><b>iOS live video pixel range inversion and texture map to 3D spheres</b></h4>
           </a>
-              <p><i>Written in C#</i></p>
+              <p>Written in C#</p>
               </div>
               </div><br>
 
@@ -456,7 +457,7 @@ function animateCells() {
           <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1;">  
               <h4><b>Live Video Texture Mapping</b></h4>
           </a>
-              <p><i>Written in C++ using OpenFrameWorks for osx</i></p>
+              <p>Written in C++ using OpenFrameWorks for osx</p>
           </div>
           </div><br>
 
@@ -469,7 +470,7 @@ function animateCells() {
           <div class="w3-content w3-container" style="border-bottom:1px solid #c1c1c1;">  
               <h4><b>ASCII Art, iPhone</b></h4>
           </a>
-            <i><p>Written in Swift</p></i>
+            <p>Written in Swift</p
           </div>
           </div>
     </div><br>
@@ -488,7 +489,7 @@ function animateCells() {
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCORHV6T1FrSXY5WHM/view">
               <h4><b>Blockchain Research: Bitcoin, Ethereum, and Beyond.</b></h4>
           
-              <p><i>Written in 2016 for Network Security at SMU</i></p>
+              <p>Written in 2016 for Network Security at SMU</p>
           </div>
           <hr></a></div>
 
@@ -501,7 +502,7 @@ function animateCells() {
 
               <h4><b>Facial Image Emotional Analysis</b></h4>
 
-              <p><i>Written in 2016 for Data Science Capstone Course at SMU</i></p>
+              <p>Written in 2016 for Data Science Capstone Course at SMU</p>
           </div>
          <hr></a></div>
 
@@ -513,7 +514,7 @@ function animateCells() {
 
               <h4><b>Natural Language Processing in Twitter data</b></h4>
 
-              <p><i>Written in 2016 for Database Management at SMU</i></p>
+              <p>Written in 2016 for Database Management at SMU</p>
           </div>
           <hr></a></div>
 
@@ -523,7 +524,7 @@ function animateCells() {
           <a href="https://drive.google.com/file/d/0B1NVR7hT8qCOX2s3ZFZoUG9lVnc/view">
               <h4><b>Multivariate Analysis of Wikipedia Perceptions</b></h4>
 
-              <p><i>Written in 2016 for Experimental Statistics at SMU</i></p><br>
+              <p>Written in 2016 for Experimental Statistics at SMU</p><br>
           </div>
           </a></div>   
     </div>
