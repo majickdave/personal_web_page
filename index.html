@@ -258,7 +258,7 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
 <!-- Skill Graph **********************************************************************************************************-->
 
 
-  <div onmouseenter="animateCells()" ontouchstart="animateCells()" class="w3-content w3-card-4 w3-black w3-padding-large w3-justify w3-animate-opacity" style=" max-height: 60%;">
+  <div onwheel="animateCells()" ontouchstart="animateCells()" class="w3-content w3-card-4 w3-black w3-padding-large w3-justify w3-animate-opacity" style=" max-height: 60%;">
 
   <h2>Programming Languages</h2><br>
     
@@ -298,9 +298,7 @@ function move(element, w) {
   var elem = document.getElementById(element);   
   var width = 1;
   var id = setInterval(frame, 5);
-  var x = element.view;
-
-  if x {function frame() {
+  function frame() {
     if (width >= w) {
       clearInterval(id);
     } else {
@@ -308,7 +306,7 @@ function move(element, w) {
       elem.style.width = width + '%';
     }
   }
-}}
+}
 
 function animateCells() {
   move('myPython', 95);
