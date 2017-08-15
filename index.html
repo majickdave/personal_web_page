@@ -235,19 +235,19 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
 <div class="w3-padding-large"></div>
 <div  id="main" >
   <!-- Header/Home -->
-  <div class="w3-animate-opacity w3-content w3-card w3-white w3-round w3-padding-large w3-center" style="border:1px solid #c1c1c1; margin: auto">
-  <header class="w3-container" id="home"><br>
+  <div class="w3-content w3-card w3-white w3-round w3-padding-large w3-center" style="border:1px solid #c1c1c1; margin: auto">
+  <header class="w3-animate-opacity w3-container" id="home"><br>
     <img style="border:4px solid white" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2PAAAAJDJhYWQ5YTQ3LWRjMjUtNDE1NS04OGE1LTAzZDJmYjZlNTUxOA.jpg" alt="David Samuel's Portrait" class="w3-animate-opacity w3-card-2 w3-circle portrait object-fit_cover">
     <h1><span>David Samuel</span></h1>
     <h3>Founder of MusicMind</h3><br>
-    <div class="w3-opacity">
+    <div>
       <a target="_blank" href="https://datascience.smu.edu/"><p>M.S. Data Science, Southern Methodist University 2017</p></a>
       <a target="_blank" href="https://engineering.umass.edu/"><p>B.S. Engineering, University of Massachusetts 2009</p></a>
     </div><br>
   <div class="w3-content w3-justify" id="about">
     <h2>Prologue</h2>
     <hr>
-    <p class="w3-opacity">My passion for image processing, and machine learning developed while enrolled in a graduate data visualization course at Southern Methodist University in the summer of 2016. However, my passion for music and the arts emerged long before graduate school; I began building websites, and storing and indexing digital media, games, and software at a very young age.  My interest in music fused with my love for visualizing data; and so I began creating thoughtful masterpieces, generatively through code.  I strive to build powerful, and fun software, and MusicMind is a culmination of my life's work, that is continually refreshed by my curiosity in computing and art.
+    <p>My passion for image processing, and machine learning developed while enrolled in a graduate data visualization course at Southern Methodist University in the summer of 2016. However, my passion for music and the arts emerged long before graduate school; I began building websites, and storing and indexing digital media, games, and software at a very young age.  My interest in music fused with my love for visualizing data; and so I began creating thoughtful masterpieces, generatively through code.  I strive to build powerful, and fun software, and MusicMind is a culmination of my life's work, that is continually refreshed by my curiosity in computing and art.
     </p>
 </div>
 </header>
@@ -258,9 +258,9 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
 <!-- Skill Graph **********************************************************************************************************-->
 
 
-  <div onwheel="animateCells()" ontouchmove="animateCells()" class="w3-content w3-card-4 w3-black w3-padding-large w3-justify w3-animate-opacity" style=" max-height: 60%;">
+  <div onclick="animateCells()" class="w3-content w3-card-4 w3-black w3-padding-large w3-justify" style=" max-height: 60%;" id="animate">
 
-  <h2>Programming Languages</h2><br>
+  <h2 class="w3-animate-fading">Programming Languages</h2><br>
     
     <p1 class="w3-wide" style="color:#50f9fc; font-family: Helvetica Neue">Python<p2 class="devicon-python-plain"></p2></p1>
     <h1 class="w3-round-xxlarge python" style="fill:none; background-color:#50f9fc; height:10px; width:0%" id="myPython">
@@ -294,6 +294,8 @@ p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 1
   </div>
 
 <script>
+
+
 function move(element, w) {
   var elem = document.getElementById(element);   
   var width = 1;
@@ -306,17 +308,20 @@ function move(element, w) {
       elem.style.width = width + '%';
     }
   }
+  
 }
 
 function animateCells() {
-  move('myPython', 95);
-  move('myJs', 90);
-  move('mySwift', 85)
-  move('myJava', 80)
-  move('myRuby', 70)
-  move('myCpp', 65)
-
+    move('myPython', 95);
+    move('myJs', 90);
+    move('mySwift', 85)
+    move('myJava', 80)
+    move('myRuby', 70)
+    move('myCpp', 65)
+    
 }
+
+
 </script>
   </div><br>
 
