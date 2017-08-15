@@ -163,7 +163,8 @@ body.homepage #navigation-top {
    display: none !important;
  }*/
 
-body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 10px white)}
+
+p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px 1px 10px white)}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
@@ -256,40 +257,41 @@ body, p,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue"; filter:drop-shadow(1px
 
 <!-- Skill Graph **********************************************************************************************************-->
 
-<!-- <div class="w3-padding-16"> -->
-  <div class="w3-content w3-card-4 w3-black w3-padding-large w3-justify" style=" max-height: 60%; margin: auto">
-<!--   <div style="padding-left: 20px"> -->
+
+  <div onwheel="animateCells()" ontouchmove="animateCells()" class="w3-content w3-card-4 w3-black w3-padding-large w3-justify" style=" max-height: 60%;">
+
   <h2>Programming Languages</h2>
-  
-    <p class="w3-wide" style="color:#50f9fc;"><b><i class="devicon-python-plain"></i>
-      Python</p>
-    <h3 class="w3-round-xxlarge python" onclick="move('myPython', 95)" style="background-color:#50f9fc; height:28px;width:95%" id="myPython">
-    </h3>
+    
+    <p1 class="w3-wide" style="color:#50f9fc; font-family: Helvetica Neue">Python<p2 class="devicon-python-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge python" style="fill:none; background-color:#50f9fc; height:10px; width:0%" id="myPython">
+    </h1>
+    
 
-    <p class="w3-wide" style="color:#50f442;"><i class="devicon-javascript-plain"></i>
-      Javascript</p>
-    <h1 class="w3-round-xxlarge javascript" onclick="move('myJs', 90)" style="background-color: #50f442;height:28px;width:90%" id="myJs">
+    <p1 class="w3-wide"  style="color:#50f442; font-family: Helvetica Neue">Javascript<p2 class="devicon-javascript-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge javascript"  style="background-color: #50f442; height:10px; width:0%" id="myJs">
     </h1>
-    <p class="w3-wide " style="color:#edfc50"><i class="devicon-swift-plain"></i>
-      Swift</p>
-    <h1 class="w3-round-xxlarge swift" onclick="move('mySwift', 85)" style="background-color:#edfc50; height:28px;width:85%" id="mySwift">
-    </h1>
-    <p class="w3-wide" style="color: #ff8a23"><i class="devicon-java-plain"></i>
-      Java</p>
-    <h1 class="w3-round-xxlarge java" onclick="move('myJava', 80)" style="background-color:#ff8a23;height:28px;width:80%" id="myJava">
-    </h1>
-    <p class="w3-wide" style="color: #ff4242"><i class="devicon-ruby-plain"></i>
-      Ruby</p>
-    <h1 class="w3-round-xxlarge ruby" onclick="move('myRuby', 70)" style="background-color:#ff4242;height:28px;width:70%" id="myRuby">
+    
+
+    <p1 class="w3-wide "  style="color:#edfc50; font-family: Helvetica Neue">Swift<p2 class="devicon-swift-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge swift" style="background-color:#edfc50; height:10px; width:0%"" id="mySwift">
     </h1>
 
-    <p class="w3-wide" style="color: #ff87f9"><i class="devicon-cplusplus-plain"></i>
-      C++</p></b>
-    <h1 class="w3-round-xxlarge cpp" onclick="move('myCpp', 65)" style="background-color:#ff87f9;height:28px;width:65%" id="myCpp">
-    </h1><br>
+
+    <p1 class="w3-wide" style="color: #ff8a23; font-family: Helvetica Neue">Java<p2 class="devicon-java-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge java" style="background-color:#ff8a23; height:10px; width:0%" id="myJava">
+    </h1>
+
+
+    <p1 class="w3-wide" style="color: #ff4242; font-family: Helvetica Neue">Ruby<p2 class="devicon-ruby-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge ruby"  style="background-color:#ff4242; height:10px; width:0%" id="myRuby">
+    </h1>
+
+
+    <p1 class="w3-wide" style="color: #ff87f9; font-family: Helvetica Neue">C++<p2 class="devicon-cplusplus-plain"></p2></p1>
+    <h1 class="w3-round-xxlarge cpp"  style="background-color:#ff87f9; height:10px; width:0%" id="myCpp">
+    </h1>
+
   </div><br>
-<!-- </div> -->
-
 
 <script>
 function move(element, w) {
@@ -301,11 +303,23 @@ function move(element, w) {
       clearInterval(id);
     } else {
       width++; 
-      elem.style.width = width + '%'; 
+      elem.style.width = width + '%';
     }
   }
 }
+
+function animateCells() {
+  move('myPython', 95);
+  move('myJs', 90);
+  move('mySwift', 85)
+  move('myJava', 80)
+  move('myRuby', 70)
+  move('myCpp', 65)
+
+}
 </script>
+  </div><br>
+
 
 <!--     References -->
 <!-- <div class="w3-padding-16" id="references"> -->
